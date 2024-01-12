@@ -1,11 +1,25 @@
-Na abordagem tradicional, os dados eram armazenados de forma descentralizada em suas aplicações, cada uma aplicação possuia seus próprios métodos de manipulação e acesso aos dados. Essa descentralização dos dados resultava em redundância de informações, pois os dados eram replicados em vários ambientes diferentes. Além disso, a segurança não era tão desenvolvida, levando a cada aplicativo a estabelecer suas próprias regras de integridade.
+Na abordagem tradicional, os dados eram armazenados de forma descentralizada em suas
+aplicações, cada uma aplicação possuía seus próprios métodos de manipulação e acesso aos
+dados. Essa descentralização dos dados resultava em redundância de informações, pois os
+dados eram replicados em vários ambientes diferentes. Além disso, a segurança não era tão
+desenvolvida, levando cada aplicativo a estabelecer suas próprias regras de integridade.
 
-Já na abordagem moderna dos Sistemas de Gerenciamento de Bancos de Dados (SGBDs), observamos uma mudança significativa. Os dados são centralizados em um banco de dados. Os SGBDs atuam como intermediários entre os aplicativos e esses dados, proporcionando organização e consistência.
+Já na abordagem moderna dos Sistemas de Gerenciamento de Bancos de Dados (SGBDs), 
+observamos uma mudança significativa. Os dados são centralizados em um banco de dados. Os 
+SGBDs atuam como intermediários entre os aplicativos e esses dados, proporcionando
+organização e consistência.
 
-Ao contrário da abordagem tradicional, onde os dados estavam fortemente vinculados às aplicações e alterá-los poderia impactar diretamente essas aplicações, os SGBDs oferecem uma separação entre a definição dos dados (esquema) e as aplicações que os utilizam.
+Ao contrário da abordagem tradicional, onde os dados estavam fortemente vinculados às
+aplicações e alterá-los poderia impactar diretamente essas aplicações, os SGBDs oferecem
+uma separação entre a definição dos dados (esquema) e as aplicações que os utilizam.
 
-Os SGBDs são projetados para evitar redundância, garantindo que os dados sejam armazenados de forma eficiente e sem repetições desnecessárias.
+Os SGBDs são projetados para evitar redundância, garantindo que os dados sejam armazenados
+de forma eficiente e sem repetições desnecessárias.
 
-Outro ponto importante é a integridade referencia, pois através dela é possível definir constraints, chaves primárias e estrangeiras, para garantir relações coerentes entre os dados. Essas constraints ajudam a manter a consistência e a validade das relações no banco de dados.
+Outro ponto importante é a integridade referencia, pois através dela é possível definir
+constraints, chaves primárias e estrangeiras, para garantir relações coerentes entre os
+dados. Essas constraints ajudam a manter a consistência e a validade das relações no banco de dados.
 
-O SGBDs também oferecem recursos para controle de acesso e segurança. Mecanismos de permissões de usuário, criptografia e outras técnicas são implementados para garantir a proteção dos dados contra acessos não autorizados.
+O SGBDs também oferecem recursos para controle de acesso e segurança. Mecanismos de
+permissões de usuário, criptografia e outras técnicas são implementados para garantir a
+proteção dos dados contra acessos não autorizados.
