@@ -1,0 +1,19 @@
+Exercício 1: Explique, de forma detalhada, como a abordagem tradicional integrava a estrutura e o gerenciamento de dados nas aplicações.
+
+Exercício 2: Destaque as principais dificuldades enfrentadas na abordagem tradicional ao realizar modificações na estrutura de dados.
+
+Exercício 3: Compare a abordagem tradicional com a abordagem moderna em termos de separação entre a definição dos dados e as aplicações que os utilizam.
+
+Exercício 4: Descreva como o isolamento, proporcionado pelo uso de Sistemas de Gerenciamento de Bancos de Dados (SGBDs), contribui para a manutenção eficiente do sistema e dos dados.
+
+Exercício 5: Explique como as modificações necessárias são refletidas de maneira mais eficiente na abordagem moderna, destacando a distinção entre esquema e persistência dos dados.
+
+Exercício 6: Compare a forma como as mudanças na estrutura embutida na aplicação são tratadas na abordagem tradicional e na abordagem moderna.
+
+Exercício 7: Discuta a importância da independência de problemas e dados na abordagem moderna, exemplificando como alterações no esquema não impactam diretamente a aplicação.
+
+Exercício 8: Detalhe como o conceito de abstração, mencionado como pilar da transição, permite ignorar detalhes específicos desnecessários na gestão de dados.
+
+Exercício 9: Explique como a transparência assegura que as operações internas do SGBD, como armazenamento e processamento de dados, sejam compreendidas pelo desenvolvedor.
+
+Exercício 10: Analise como o isolamento, implementado por meio de catálogos, contribui para manter os dados orientados na abordagem moderna e facilita o tratamento de modificações.

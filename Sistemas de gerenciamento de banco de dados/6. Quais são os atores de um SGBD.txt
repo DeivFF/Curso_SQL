@@ -1,0 +1,15 @@
+O sistema de gerenciamento de banco de dados (SGBD) envolve algumas pessoas que desempenham papeis no seu funcionamento.
+
+Designer de banco de dados(DBD): Responsável por arquitetar os dados, criar modelos gráficos para representar sua estrutura. É o responsável por modelar os dados.
+
+Administrador de banco de dados (DBA): Gerencia recursos do banco de dados, configuração, autorização de acesso e orquestração do sistema. Trabalha em conjunto com o DBD para garantir a eficiência e segurança do banco de dados. 
+
+Usuários finais:
+Casuais: Alguém que acessa o banco de dados vez ou outra para extrair algo.
+Engenheiros: Utilizam transações encapsuladas por linguagens de programação para acessar dados.
+Sofisticados: Possuem conhecimento avançado do sistema, como cientistas e engenheiros, e podem acessar dados diretamente.
+
+Programadores/Engenheiros de Software: Desenvolvem aplicações que interagem com o banco de dados.
+
+Vatagens do uso dos SGBDS:
+Facilidade de acesso, segurança, pois tem controle de acesso que garante que apenas usuários com permissão irão manipular o SGBD e eficiência, 

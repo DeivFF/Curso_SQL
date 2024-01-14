@@ -1,0 +1,14 @@
+Exercício 1:
+O que significa dizer que os Sistemas de Gerenciamento de Bancos de Dados (SGBDs) são autodescritivos?
+
+Exercício 2:
+Como os SGBDs utilizam o "esquema" para definir a estrutura dos dados antes da inserção de instâncias?
+
+Exercício 3:
+Explique o papel dos metadados na natureza autodescritiva dos SGBDs.
+
+Exercício 4:
+Dê um exemplo de metadado relacionado a uma coluna chamada "Ano publicado" em uma tabela do banco de dados.
+
+Exercício 5:
+Quais são as vantagens de utilizar um SGBD em relação à capacidade de gerenciar informações de múltiplos bancos de dados?

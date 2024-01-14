@@ -1,0 +1,28 @@
+1. Na abordagem tradicional, como os dados eram armazenados?
+
+
+2. Quais eram as consequências da descentralização dos dados na abordagem tradicional?
+
+
+3. Qual a função principal dos Sistemas de Gerenciamento de Bancos de Dados (SGBDs) na abordagem moderna?
+
+
+4. Diferencie a abordagem tradicional da moderna em relação à vinculação dos dados às aplicações.
+
+
+5. Como os SGBDs evitam a redundância de informações no armazenamento de dados?
+
+
+6. Explique a importância da integridade referencial na abordagem dos SGBDs.
+
+
+7. O que são constraints em um SGBD e qual é o seu papel na consistência do banco de dados?
+
+
+8. Mencione um benefício da separação entre a definição dos dados e as aplicações nos SGBDs.
+
+
+9. Como os SGBDs garantem a eficiência no armazenamento de dados?
+
+
+10. Quais são os recursos oferecidos pelos SGBDs para garantir controle de acesso e segurança?

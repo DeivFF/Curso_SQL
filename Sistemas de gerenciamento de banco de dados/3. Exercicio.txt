@@ -1,0 +1,5 @@
+Exercício 1:
+Explique o conceito de "views" em Sistemas de Gerenciamento de Bancos de Dados (SGBDs) e como elas são úteis em situações com múltiplos usuários representando diferentes setores.
+
+Exercício 2:
+Descreva por que as views são consideradas valiosas quando diferentes setores, como educação, marketing, vendas e financeiro, precisam acessar informações específicas e relevantes para suas respectivas áreas.

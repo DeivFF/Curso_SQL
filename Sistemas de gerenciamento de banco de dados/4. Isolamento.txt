@@ -1,0 +1,22 @@
+Na abordagem tradicional, a estrutura e o gerenciamento de dados estavam profundamente integrados nas aplicações, resultando em problemas como a necessidade de reescrever códigos ao realizar modificações na estrutura. Em contrapartida, a abordagem moderna, ao utilizar SGBDs, introduz o conceito de abstração, permitindo uma separação mais clara entre a definição dos dados (esquema) e as aplicações que os utilizam.
+
+O isolamento, alcançado pela utilização do SGBD, facilita a manutenção do sistema e dos dados. Modificações necessárias são refletidas de maneira mais eficiente, pois há uma distinção clara entre o esquema e a persistência dos dados. Isso contrasta com a abordagem tradicional, onde mudanças na estrutura embutida na aplicação exigem alterações extensivas.
+
+A independência de problemas e dados, uma característica essencial da abordagem moderna, permite que alterações no esquema ou na persistência dos dados ocorram sem impactar diretamente a aplicação. Esse conceito de independência é exemplificado pela capacidade de efetuar alterações em um banco de dados sem interferir na aplicação em produção.
+
+A abstração, um pilar dessa transição, implica generalização, permitindo ignorar detalhes específicos desnecessários. A transparência, por sua vez, garante que as operações internas do SGBD, como armazenamento e processamento de dados, sejam transparentes para o desenvolvedor.
+
+O isolamento, implementado por meio de catálogos, destaca como a abordagem moderna mantém os dados orientados, permitindo que modificações sejam tratadas de maneira mais eficaz. Em resumo, a abstração e o isolamento representam a evolução na gestão de dados, proporcionando maior flexibilidade e eficiência nas operações de um sistema.
+-------------------------------------------------------------------EM OUTRAS PALAVRAS-------------------------------------------------------------------
+
+Na forma antiga, os dados e a forma como lidamos com eles eram muito ligadas aos programas. Isso causava problemas quando precisávamos fazer mudanças, porque tínhamos que mexer em vários códigos. Mas agora, com a forma moderna usando Sistemas de Gerenciamento de Bancos de Dados (SGBDs), a gente separa melhor os dados dos programas que os usam.
+
+Essa separação facilita muito quando precisamos arrumar ou mudar alguma coisa. Antes, mexer na estrutura dentro da aplicação era complicado e precisava de muita alteração.
+
+O isolamento, que é uma parte desse jeito moderno de fazer, ajuda a manter o sistema e as informações organizadas. Quando precisamos fazer mudanças, elas são feitas de uma forma mais eficiente, porque o esquema e onde os dados são guardados estão bem separados. Isso é bem diferente da forma antiga, onde mexer na estrutura dentro da aplicação dava trabalho enorme.
+
+Outra coisa importante é que, com essa abordagem moderna, podemos fazer mudanças nos dados ou na estrutura sem causar muitos problemas para a aplicação. Isso é chamado de independência, porque podemos mexer no banco de dados sem afetar diretamente a aplicação que está em uso.
+
+A abstração, nos ajuda a ignorar detalhes complicados e desnecessários. E a transparência garante que as coisas internas do Sistema de Gerenciamento de Banco de Dados (SGBD), como guardar e processar dados, são claras para quem está desenvolvendo.
+
+O isolamento, que acontece através de catálogos, mostra como essa forma moderna mantém os dados organizados, permitindo que mudanças sejam feitas de um jeito mais eficaz. Resumindo, a abstração e o isolamento representam um jeito melhor de lidar com informações, dando mais flexibilidade e eficiência no funcionamento de um sistema.

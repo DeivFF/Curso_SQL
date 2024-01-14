@@ -1,0 +1,28 @@
+01. Explique, por que o controle de concorrência é crucial em ambientes onde muitas pessoas estão utilizando um sistema de gerenciamento de banco de dados ao mesmo tempo.
+
+
+02. Dê um exemplo prático de como o controle de concorrência pode ser aplicado para evitar problemas em uma transação no banco de dados.
+
+
+03. Descreva como o "Online Transaction Processing" (OLTP) é fundamental em operações bancárias.
+
+
+04. Qual é o principal objetivo do OLTP em termos de desempenho? Explique como o OLTP contribui para a rapidez nas transações.
+
+
+05. Como a concorrência, se não controlada adequadamente, poderia impactar negativamente a reserva de assentos em um sistema online?
+
+
+06. Por que sistemas bancários e outros serviços online dependem fortemente do OLTP, especialmente em ambientes de transações em tempo real?
+
+
+07. Explique a importância da consistência de dados no OLTP, fornecendo um exemplo de uma situação em que a consistência é crucial.
+
+
+08. Como o controle de concorrência, em conjunto com o OLTP, lida com os desafios de múltiplas transações acontecendo simultaneamente em ambientes movimentados?
+
+
+09. Por que é crucial manter a integridade dos dados em situações onde decisões importantes, como reservas e depósitos bancários, são tomadas com base nesses dados?
+
+
+10. Faça um resumo crítico, destacando a importância do controle de concorrência e do OLTP em ambientes complexos de gerenciamento de dados, e como esses componentes garantem eficiência e integridade operacional.

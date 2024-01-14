@@ -1,0 +1,19 @@
+Exercício 1: Explique a importância do controle de redundância nos SGBDs e como ele contribui para a eficiência do banco de dados.
+
+Exercício 2: Qual é o papel da restrição de acesso em um banco de dados? Por que é considerada uma peça fundamental para garantir a segurança das informações?
+
+Exercício 3: Descreva o conceito de "Storage - Prover Persistência" nos SGBDs. Como as técnicas de armazenamento em disco são utilizadas para garantir a persistência dos dados?
+
+Exercício 4: O que significa "Impedance Mismatch Problem" em SGBDs? Por que é vital superar essa disparidade para uma integração eficiente entre o banco de dados e a aplicação?
+
+Exercício 5: Explique por que é essencial que um SGBD forneça uma estrutura organizada. Quais são os elementos importantes dessa estrutura?
+
+Exercício 6: Como a "Estrutura de Armazenamento e Técnicas de Buscas" contribui para a eficiência na organização interna dos dados em um banco de dados? Cite exemplos de técnicas de busca mencionadas no texto.
+
+Exercício 7: Discuta o papel dos métodos de caching, buffering e indexação na otimização do desempenho de um banco de dados. Explique como cada um desses métodos funciona.
+
+Exercício 8: Por que os processos de "Backup e Recovery" são considerados essenciais para a segurança dos dados em um banco de dados? Descreva as principais práticas envolvidas nesses processos.
+
+Exercício 9: Qual é a importância da "Integridade de Dados" em um banco de dados? Explique como conceitos como integridade referencial, regras de domínio, asserções, gatilhos e dependências funcionais contribuem para essa integridade.
+
+Exercício 10: O que significa "Inferência, Ações com Regras, Triggers" nos SGBDs? Como essas funcionalidades contribuem para a eficiência e confiabilidade dos sistemas de gerenciamento de banco de dados?

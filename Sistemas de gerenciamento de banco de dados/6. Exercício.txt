@@ -1,0 +1,10 @@
+01. Qual é a função principal do Designer de Banco de Dados (DBD) em um Sistema de Gerenciamento de Banco de Dados (SGBD)? Explique.
+
+02. Como o Administrador de Banco de Dados (DBA) contribui para a eficiência e segurança do banco de dados? Descreva suas responsabilidades em conjunto com o DBD.
+
+03. Quem são os usuários finais Sofisticados em um SGBD e por que eles são categorizados como tal? Forneça exemplos de situações em que esses usuários podem ser necessários.
+
+04. Qual é o papel dos Programadores/Engenheiros de Software em relação ao banco de dados? Explique como eles desenvolvem aplicações que interagem com o SGBD.
+
+05. Destaque e explique duas vantagens sobre o uso de SGBDS. Como essas vantagens impactam o acesso e a segurança dos dados?
+
