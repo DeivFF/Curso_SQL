@@ -1,41 +1,71 @@
-Nos SGBDs, temos o controle de redundância, que diz respeito à prática de minimizar ou eliminar a duplicação desnecessária de dados em um banco de dados. Essa abordagem é crucial para evitar desperdício de espaço de armazenamento, promovendo a consistência e integridade dos dados.
+Nos SGBDs, temos o controle de redundância, que diz respeito à prática de minimizar ou eliminar a duplicação desnecessária de
+dados em um banco de dados. Essa abordagem é crucial para evitar desperdício de espaço de armazenamento, promovendo a
+consistência e integridade dos dados.
 
-A restrição de acesso é outra peça fundamental, envolvendo o controle sobre quem possui permissão para acessar e modificar dados no banco de dados. Esse mecanismo é essencial para garantir a segurança e a privacidade das informações, permitindo o acesso apenas a usuários autorizados.
+A restrição de acesso é outra peça fundamental, envolvendo o controle sobre quem possui permissão para acessar e modificar
+dados no banco de dados. Esse mecanismo é essencial para garantir a segurança e a privacidade das informações, permitindo o
+acesso apenas a usuários autorizados.
 
-O tópico de "Storage - Prover Persistência" destaca a capacidade do sistema de gerenciamento de banco de dados (SGBD) em assegurar que os dados sejam armazenados de maneira duradoura, mesmo diante de interrupções ou reinicializações do sistema. Isso engloba técnicas de armazenamento em disco para garantir a persistência dos dados.
+O tópico de "Storage - Prover Persistência" destaca a capacidade do sistema de gerenciamento de banco de dados (SGBD) em
+assegurar que os dados sejam armazenados de maneira duradoura, mesmo diante de interrupções ou reinicializações do sistema.
+Isso engloba técnicas de armazenamento em disco para garantir a persistência dos dados.
 
-Possuímos o termo "Impedance Mismatch Problem", que ocorre quando há incompatibilidade entre o modelo de dados no banco de dados e na aplicação. Superar essa disparidade é vital para assegurar uma integração eficiente entre o banco de dados e a aplicação.
+Possuímos o termo "Impedance Mismatch Problem", que ocorre quando há incompatibilidade entre o modelo de dados no banco de
+dados e na aplicação. Superar essa disparidade é vital para assegurar uma integração eficiente entre o banco de dados e a
+aplicação.
 
-Além da persistência, é essencial que o SGBD forneça uma estrutura organizada, conforme abordado no tópico "Storage - Prover Estrutura". Isso inclui a definição de tabelas, índices e outras estruturas que otimizam o acesso aos dados.
+Além da persistência, é essencial que o SGBD forneça uma estrutura organizada, conforme abordado no tópico "Storage - Prover
+Estrutura". Isso inclui a definição de tabelas, índices e outras estruturas que otimizam o acesso aos dados.
 
-A "Estrutura de Armazenamento e Técnicas de Buscas" envolve a organização interna dos dados no banco de dados e as técnicas utilizadas para buscar informações de maneira eficiente, como índices, árvores de busca e algoritmos de pesquisa.
+A "Estrutura de Armazenamento e Técnicas de Buscas" envolve a organização interna dos dados no banco de dados e as técnicas
+utilizadas para buscar informações de maneira eficiente, como índices, árvores de busca e algoritmos de pesquisa.
 
-Métodos como caching, buffering e indexação, mencionados no tópico "Caching, Buffering, Indexação", são empregados para otimizar o desempenho do banco de dados. O caching armazena temporariamente dados frequentemente acessados, o buffering gerencia a transferência de dados, e a indexação acelera a recuperação de informações.
+Métodos como caching, buffering e indexação, mencionados no tópico "Caching, Buffering, Indexação", são empregados para
+otimizar o desempenho do banco de dados. O caching armazena temporariamente dados frequentemente acessados, o buffering 
+gerencia a transferência de dados, e a indexação acelera a recuperação de informações.
 
-Os processos de "Backup e Recovery" são essenciais para a segurança dos dados, envolvendo a criação de cópias de segurança regulares e a implementação de mecanismos para recuperar dados em situações de falhas, perdas ou corrupção.
+Os processos de "Backup e Recovery" são essenciais para a segurança dos dados, envolvendo a criação de cópias de segurança
+regulares e a implementação de mecanismos para recuperar dados em situações de falhas, perdas ou corrupção.
 
-A "Integridade de Dados" é mantida para garantir a consistência e precisão das informações armazenadas no banco de dados. Isso inclui conceitos como integridade referencial, regras de domínio, asserções, gatilhos e dependências funcionais.
+A "Integridade de Dados" é mantida para garantir a consistência e precisão das informações armazenadas no banco de dados. Isso
+inclui conceitos como integridade referencial, regras de domínio, asserções, gatilhos e dependências funcionais.
 
-Por fim, "Inferência, Ações com Regras, Triggers" referem-se à capacidade do SGBD de inferir informações com base nos dados existentes, executar ações automáticas em resposta a condições específicas (triggers) e aplicar regras definidas para manter a integridade e consistência dos dados. Essas funcionalidades contribuem significativamente para a eficiência e confiabilidade dos sistemas de gerenciamento de banco de dados.
+Por fim, "Inferência, Ações com Regras, Triggers" referem-se à capacidade do SGBD de inferir informações com base nos dados
+existentes, executar ações automáticas em resposta a condições específicas (triggers) e aplicar regras definidas para manter a 
+integridade e consistência dos dados. Essas funcionalidades contribuem significativamente para a eficiência e confiabilidade
+dos sistemas de gerenciamento de banco de dados.
 
--------------------------------------------------------------------EM OUTRAS PALAVRAS-------------------------------------------------------------------
+-------------------------------------------------------------EM OUTRAS PALAVRAS-----------------------------------------------------------
 
-Nos bancos de dados, a gente cuida para não ter informações repetidas, isso é chamado de "controle de redundância". Essa prática é importante para não gastar espaço à toa, além de manter os dados consistentes e certinhos.
+Nos bancos de dados, a gente cuida para não ter informações repetidas, isso é chamado de "controle de redundância". Essa 
+prática é importante para não gastar espaço à toa, além de manter os dados consistentes e certinhos.
 
-Outra coisa importante é o "controle de acesso", que é basicamente decidir quem pode ver ou mudar informações no banco de dados. Isso é crucial para mantê-los seguros e privadao, garantindo que só quem deve pode acessar as informações.
+Outra coisa importante é o "controle de acesso", que é basicamente decidir quem pode ver ou mudar informações no banco de
+dados. Isso é crucial para mantê-los seguros e privadao, garantindo que só quem deve pode acessar as informações.
 
-O "tópico de armazenamento para ser duradouro" fala sobre como é importante que o sistema de banco de dados consiga guardar as informações por um bom tempo, mesmo se o sistema desligar e ligar de novo. Isso envolve guardar os dados no disco de uma forma que não se percam.
+O "tópico de armazenamento para ser duradouro" fala sobre como é importante que o sistema de banco de dados consiga guardar
+as informações por um bom tempo, mesmo se o sistema desligar e ligar de novo. Isso envolve guardar os dados no disco de uma forma
+que não se percam.
 
-Temos também o termo chamado "Impedance Mismatch", que é quando as informações no banco de dados não combinam direito com as informações na aplicação. Resolver isso é crucial para fazer a aplicação e o banco de dados trabalharem bem juntos.
+Temos também o termo chamado "Impedance Mismatch", que é quando as informações no banco de dados não combinam direito com as
+informações na aplicação. Resolver isso é crucial para fazer a aplicação e o banco de dados trabalharem bem juntos.
 
-Além de guardar os dados, é essencial que o banco de dados tenha uma "estrutura organizada". Isso significa ter tabelas, índices e outras coisas que ajudam a encontrar os dados mais rápido.
+Além de guardar os dados, é essencial que o banco de dados tenha uma "estrutura organizada". Isso significa ter tabelas,
+índices e outras coisas que ajudam a encontrar os dados mais rápido.
 
-A "organização dos dados e técnicas de busca" fala sobre como organizar as informações dentro do banco de dados e usar técnicas para procurar essas informações de maneira eficiente, como índices, árvores de busca e jeitos de procura.
+A "organização dos dados e técnicas de busca" fala sobre como organizar as informações dentro do banco de dados e usar técnicas
+para procurar essas informações de maneira eficiente, como índices, árvores de busca e jeitos de procura.
 
-Métodos como "caching, buffering e indexação", são usados para fazer o banco de dados funcionar mais rápido. O caching guarda temporariamente informações que são muito usadas, o buffering controla a transferência de dados, e a indexação faz encontrar informações ser mais rápido.
+Métodos como "caching, buffering e indexação", são usados para fazer o banco de dados funcionar mais rápido. O caching guarda
+temporariamente informações que são muito usadas, o buffering controla a transferência de dados, e a indexação faz encontrar 
+informações ser mais rápido.
 
-Fazer "backup e recovery" dos dados é muito importante para mantê-los seguros. Isso significa fazer cópias dos dados regularmente e ter jeitos de recuperá-los se alguma coisa der errado.
+Fazer "backup e recovery" dos dados é muito importante para mantê-los seguros. Isso significa fazer cópias dos dados 
+regularmente e ter jeitos de recuperá-los se alguma coisa der errado.
 
-A "Integridade de Dados" é mantida para garantir a consistência e precisão das informações armazenadas no banco de dados. Isso inclui conceitos como integridade referencial, regras de domínio, asserções, gatilhos e dependências funcionais.
+A "Integridade de Dados" é mantida para garantir a consistência e precisão das informações armazenadas no banco de dados. Isso
+inclui conceitos como integridade referencial, regras de domínio, asserções, gatilhos e dependências funcionais.
 
-Por fim, "inferência, ações com regras e triggers" falam sobre como o banco de dados pode entender coisas novas com base nas informações que já tem, fazer ações automáticas quando algo acontece e seguir regras para manter as informações certas. Essas coisas ajudam muito na eficiência e confiabilidade dos bancos de dados.
+Por fim, "inferência, ações com regras e triggers" falam sobre como o banco de dados pode entender coisas novas com base nas
+informações que já tem, fazer ações automáticas quando algo acontece e seguir regras para manter as informações certas. Essas
+coisas ajudam muito na eficiência e confiabilidade dos bancos de dados.

@@ -1,11 +1,22 @@
-A maneira como os dados são compartilhados e as transações são processadas em sistemas de gerenciamento de bancos de dados é muito importante em lugares onde muitas pessoas estão utilizando o mesmo ao mesmo tempo. Para garantir que diferentes grupos possam acessar as informações ao mesmo tempo e manter os dados corretos, utiliza-se algo chamado controle de concorrência.
+A maneira como os dados são compartilhados e as transações são processadas em sistemas de gerenciamento de bancos de dados é
+muito importante em lugares onde muitas pessoas estão utilizando o mesmo ao mesmo tempo. Para garantir que diferentes grupos 
+possam acessar as informações ao mesmo tempo e manter os dados corretos, utiliza-se algo chamado controle de concorrência.
 
-Esse controle é crucial para assegurar que as transações (ações como reservar assentos de avião) aconteçam ao mesmo tempo sem causar problemas nos dados. Supondo que duas pessoas estão tentando pegar o mesmo assento - é necessário bloquear temporariamente algumas coisas para garantir que tudo fique certo e não aconteçam coisas ao mesmo tempo que possam dar problemas nos dados.
+Esse controle é crucial para assegurar que as transações (ações como reservar assentos de avião) aconteçam ao mesmo tempo sem
+causar problemas nos dados. Supondo que duas pessoas estão tentando pegar o mesmo assento - é necessário bloquear
+temporariamente algumas coisas para garantir que tudo fique certo e não aconteçam coisas ao mesmo tempo que possam dar problemas nos dados.
 
-O conceito de "Online Transaction Processing" (OLTP) envolve registrar transações que têm várias etapas. Isso permite que o sistema mantenha os dados organizados mesmo quando várias coisas estão acontecendo ao mesmo tempo. Sistemas bancários e outros serviços online dependem muito do OLTP para garantir que operações complexas aconteçam sem problemas.
+O conceito de "Online Transaction Processing" (OLTP) envolve registrar transações que têm várias etapas. Isso permite que o
+sistema mantenha os dados organizados mesmo quando várias coisas estão acontecendo ao mesmo tempo. Sistemas bancários e outros
+serviços online dependem muito do OLTP para garantir que operações complexas aconteçam sem problemas.
 
-O OLTP é feito para ser rápido, garantir que diferentes transações não atrapalhem uma a outra, e manter os dados do sistema consistentes. Isso é super importante em operações como depósitos bancários, onde o sistema precisa garantir que tudo aconteça corretamente, mesmo com muita gente usando ao mesmo tempo.
+O OLTP é feito para ser rápido, garantir que diferentes transações não atrapalhem uma a outra, e manter os dados do sistema 
+consistentes. Isso é super importante em operações como depósitos bancários, onde o sistema precisa garantir que tudo aconteça corretamente, mesmo com muita gente usando ao mesmo tempo.
 
-O controle de concorrência, junto com o OLTP, é crucial para manter os dados corretos em lugares movimentados. O sistema precisa lidar com várias transações acontecendo ao mesmo tempo, garantindo que tudo seja completado com sucesso ou desfeito se der algum problema. Isso é especialmente importante em situações onde decisões são tomadas com base em dados, como reservas, depósitos bancários ou consultas de extratos. 
+O controle de concorrência, junto com o OLTP, é crucial para manter os dados corretos em lugares movimentados. O sistema 
+precisa lidar com várias transações acontecendo ao mesmo tempo, garantindo que tudo seja completado com sucesso ou desfeito se 
+der algum problema. Isso é especialmente importante em situações onde decisões são tomadas com base em dados, como reservas,
+depósitos bancários ou consultas de extratos. 
 
-Em resumo, o controle de concorrência e o OLTP são partes muito importantes para garantir que tudo funcione bem em lugares onde muitas coisas estão acontecendo ao mesmo tempo.
+Em resumo, o controle de concorrência e o OLTP são partes muito importantes para garantir que tudo funcione bem em lugares onde
+muitas coisas estão acontecendo ao mesmo tempo.

@@ -1,6 +1,10 @@
-Os Sistemas de Gerenciamento de Bancos de Dados (SGBDs) são autodescritivos, carregando informações sobre sua própria estrutura e regras. Utilizam um "esquema" para definir a estrutura dos dados sem inserção de instâncias. - Em outras palavras, o banco de dados é projetado de forma abstrata antes da inserção dos dados (instâncias).
+Os Sistemas de Gerenciamento de Bancos de Dados (SGBDs) são autodescritivos, carregando informações sobre sua própria estrutura e
+regras. Utilizam um "esquema" para definir a estrutura dos dados sem inserção de instâncias. - Em outras palavras, o banco de 
+dados é projetado de forma abstrata antes da inserção dos dados (instâncias).
 
-A natureza autodescritiva dos SGBDs depende de metadados e esquema, que fornecem informações sobre os dados e a estrutura prévia do banco de dados. Um exemplo para esta situação, supondo que exista uma tabela que possua uma coluna chamada "Ano publicado", os metadados seriam a descrição relacionada a essa coluna, exemplo:
+A natureza autodescritiva dos SGBDs depende de metadados e esquema, que fornecem informações sobre os dados e a estrutura prévia 
+do banco de dados. Um exemplo para esta situação, supondo que exista uma tabela que possua uma coluna chamada "Ano publicado", os
+metadados seriam a descrição relacionada a essa coluna, exemplo:
 
 Descrição: Ano em que ocorreu determinado evento,
 Formato: Numérico (quatro dígitos).
