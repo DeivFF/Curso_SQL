@@ -1,0 +1,19 @@
+Explique como um esquema pode ser visualizado no contexto de um banco de dados, utilizando a analogia de um diagrama.
+
+Considerando um esquema relacionado a um livro de referência com entidades como estudante, curso e requisitos, como o diagrama destaca a estrutura essencial do modelo relacional?
+
+Por que é importante distinguir o esquema do que está realmente armazenado no banco de dados? Qual é o foco principal do esquema?
+
+Qual é a diferença fundamental entre um esquema e as instâncias em um banco de dados?
+
+Como o estado de um banco de dados está relacionado ao conceito de esquema? Explique como as mudanças no estado refletem a evolução do sistema.
+
+Quais são os desafios envolvidos na modificação de um esquema em um banco de dados? Por que essa tarefa não é trivial?
+
+De que forma os modernos Sistemas de Gerenciamento de Banco de Dados (SGBDs) facilitam o processo de modificação de esquema em comparação com abordagens tradicionais?
+
+Explique o papel dos metadados no contexto do esquema de um banco de dados. Como eles contribuem para a compreensão da estrutura do banco de dados?
+
+Como o esquema é utilizado pelo SGBD em operações de consulta? De que maneira o conhecimento do esquema é essencial para realizar consultas eficientes?
+
+Explique como o esquema pode ser comparado a um "esqueleto" no contexto de um banco de dados. De que forma essa analogia ajuda a compreender a função do esquema na persistência de dados?

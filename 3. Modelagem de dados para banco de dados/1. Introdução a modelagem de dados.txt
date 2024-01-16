@@ -1,0 +1,13 @@
+A modelagem de banco de dados e a linguagem SQL desempenham papéis cruciais no desenvolvimento de banco de dados, proporcionando uma estrutura organizada para armazenamento e recuperação de dados. Analogamente à elaboração de uma planta baixa na construção civil, a modelagem fornece uma representação visual do cenário em questão. Assim como um arquiteto analisa o terreno, levando em consideração variáveis como exposição solar e requisitos específicos, na modelagem de dados, busca-se entender o "minimundo" do sistema, definindo requisitos mínimos para criar uma estrutura lógica.
+
+Este processo não se limita à construção civil. Em diferentes domínios, como o desenvolvimento de produtos e eletrônica, a modelagem é uma prática indispensável. A criação de protótipos, a análise de comportamento de novos produtos e a definição de circuitos eletrônicos são exemplos que ressaltam a necessidade de compreender o contexto antes da implementação.
+
+No contexto específico de Sistemas de Gerenciamento de Banco de Dados (SGBDs), a modelagem de dados assume uma dimensão especial. Dividida em diferentes níveis, desde o conceitual até o físico, a modelagem proporciona uma visão abstrata e gráfica (modelo conceitual) até detalhes implementacionais (modelo físico). Isso permite uma compreensão mais clara do sistema, otimizando o tempo de implementação.
+
+No âmbito da modelagem para SGBDs, a descrição dos relacionamentos entre entidades e a representação do minimundo tornam-se cruciais. Essa descrição inclui a estrutura de entidades, como estão interligadas e como representam o contexto desejado. Do modelo conceitual, mais acessível a leigos, ao modelo físico, relacionado à implementação do sistema, a modelagem desempenha um papel vital.
+
+O processo de modelagem em SGBDs segue etapas fundamentais. Inicia-se com a delimitação do contexto, entendendo o minimundo e os requisitos associados. Em seguida, realiza-se uma representação de alto nível, criando um modelo que definirá a estrutura do banco de dados relacional.
+
+A implementação no SGBD ocorre após a definição do esquema, que é a estrutura fundamental utilizada para persistir os dados. O esquema não apenas fornece uma estrutura de alto nível, mas também facilita a compreensão do contexto.
+
+A representação do esquema pode ser realizada através da entidade de relacionamento ou da linguagem de modelagem UML. Enquanto a entidade de relacionamento enfoca a relação entre entidades, o UML, embora tenha sido amplamente utilizado no passado, enfrentou desafios com sua abordagem em cascata. A exemplificação de cada representação destaca sua utilidade, demonstrando diferentes perspectivas dentro do sistema

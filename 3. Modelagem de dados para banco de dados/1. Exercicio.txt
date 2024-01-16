@@ -1,0 +1,15 @@
+1. Qual o papel da modelagem de banco de dados e da linguagem SQL no desenvolvimento de bancos de dados?
+
+2. Como a analogia com a construção civil é utilizada para explicar a importância da compreensão do contexto na modelagem de dados?
+
+3. Explique como o processo de modelagem em SGBDs é dividido em diferentes níveis, do conceitual ao físico.
+
+4. Qual é a importância da descrição dos relacionamentos entre entidades na modelagem de dados para SGBDs?
+
+5. Por que a modelagem em SGBDs segue etapas fundamentais, começando pela delimitação do contexto e entendimento dos requisitos?
+
+6. Após a definição do esquema, o que ocorre na implementação no SGBD?
+
+7. Como o esquema facilita a persistência dos dados e contribui para a compreensão do contexto no SGBD?
+
+8. Explique as diferenças entre a representação do esquema por meio da entidade de relacionamento e da linguagem de modelagem UML.

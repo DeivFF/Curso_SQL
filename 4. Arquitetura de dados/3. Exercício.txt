@@ -1,0 +1,19 @@
+Explique por que o isolamento entre dados e programas é uma característica fundamental na arquitetura de três esquemas em bancos de dados.
+
+Destaque a importância do catálogo na arquitetura de três esquemas e como ele contribui para o isolamento entre as camadas física e lógica.
+
+Qual é o propósito principal da arquitetura de três esquemas em um Sistema de Gerenciamento de Banco de Dados (SGBD)?
+
+Descreva a divisão observada na arquitetura entre a aplicação do usuário e a parte física relacionada ao SGBD.
+
+Explique como a camada mais interna da arquitetura está associada ao armazenamento físico do SGBD.
+
+O que abrange a camada conceitual na arquitetura de três esquemas e como ela se relaciona com o mapeamento entre o nível interno e o conceitual?
+
+Por que a separação entre as camadas física e lógica é essencial para o entendimento do isolamento na arquitetura de três esquemas?
+
+Quais são os aspectos tratados pela camada física e pela camada lógica na arquitetura de três esquemas?
+
+Como o modelo conceitual desempenha um papel crucial na arquitetura de três esquemas?
+
+Apesar de não ser totalmente suportada pelos SGBDs contemporâneos, por que a arquitetura de três esquemas ainda é relevante, principalmente para fins de estudo?

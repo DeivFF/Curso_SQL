@@ -1,0 +1,19 @@
+A arquitetura de três esquemas em bancos de dados é um jeito importante de organizar e fazer com que diferentes partes de um Sistema de Gerenciamento de Banco de Dados (SGBD) interajam. Antes de entrarmos nesse assunto, precisamos entender três coisas importantes que a sustentam: isolamento entre dados e programa, catálogo e views.
+
+Essa arquitetura busca definir as funções de cada parte (esquema) dentro de um SGBD, garantindo que mudanças em uma parte não atrapalhem as outras. Mesmo que os SGBDs atuais não a suportem completamente, sendo necessário algumas adaptações específicas, entender o seu propósito é fundamental para manter o SGBD de maneira eficiente.
+
+A arquitetura de três esquemas divide o sistema em três partes principais: a camada externa, relacionada à aplicação do usuário; a camada conceitual, que inclui o esquema conceitual e o mapeamento entre o interno e o conceitual; e a camada mais interna, associada ao armazenamento físico do Sistema de Gerenciamento de Banco de Dados (SGBD).
+
+A camada mais interna cuida da forma como os dados são fisicamente armazenados, como os arquivos são organizados e outros detalhes técnicos.
+
+A camada conceitual lida com a descrição abstrata da estrutura dos dados, incluindo entidades, relacionamentos e regras de integridade. Aqui também ocorre a conexão entre o armazenamento físico e a visão conceitual dos dados.
+
+Esse mapeamento entre os níveis interno e conceitual não para na camada conceitual, mas se estende até a camada externa, que é a visão que os usuários têm através de suas aplicações.
+
+Separar as partes física e lógica é crucial para entender o isolamento. A parte física lida com detalhes técnicos, como índices e organização de arquivos, enquanto a parte lógica está mais relacionada à experiência do usuário e ao modelo conceitual. Essa separação ajuda a otimizar o sistema e facilita operações específicas para cada parte.
+
+O modelo conceitual é muito importante, servindo como base para criar visões específicas para diferentes grupos de usuários. Essas visões mostram apenas o que cada grupo precisa, reforçando a ideia de isolamento.
+
+O catálogo desempenha um papel importante na arquitetura de três esquemas, pois fornece a ponte entre as camadas citadas acima. Ele contém metadados que descrevem como os dados são organizados e armazenados no nível físico (esquema interno), enquanto também oferece informações sobre a estrutura conceitual do banco de dados. No contexto do esquema externo, o catálogo ajuda a definir as visões específicas dos usuários e suas permissões de acesso.
+
+Mesmo que essa arquitetura não seja totalmente usada nos SGBDs modernos, sendo mais para estudos, ela destaca o quanto é importante manter as partes física e lógica isoladas para garantir eficiência e consistência em sistemas de gerenciamento de bancos de dados.

@@ -1,0 +1,53 @@
+As propriedades ACID são características de um SGBD transacional, as quais permitem que o banco de dados execute ações de forma livre de erros. Abaixo está a definição de cada termo:
+
+Atomicidade - Refere-se a transação ser tratada como forma indivisível. Caso alguma parte da transação falhe, todas as modifiações feita até aquele ponto são desfeitas, garantindo que o banco de dados permaneça consistente.
+
+Consistencia - Essa característica permite a atualização de um banco de dados para outro e a manutenção de sua consistência. Caso alguma regra seja violada, o banco de dados é restaurado para um estado anterior.
+
+Isolamento - Se duas transações concorrentes forem executadas simultaneamente, uma não poderá visualizar o resultado da outra até que ambas as transações estejam completamente concluídas. O isolamento é realizado para evitar qualquer tipo de interferência entre as transações.
+
+Durabilidade - Após uma transação ser realizada, garante que a mesma permanecerá, independente de falha do sistema. Isso garante que a informação permanecerá.
+
+
+Algumas das caracteristicas importante s de um SGBD que serão abordadas mais a frente, são elas:
+
+Relacionamento entre tabelas
+Linguagem de consulta estruturada
+Integridade referencial
+Normalização de dados
+Segurança
+Flexibilidade e extensibilidade
+Suporte a transação acid
+
+Os sgbds possuem algumas nomenclaturuas para descrever diferentes tipos de linguagem e operações realizadas. São elas:
+
+DQL(Linguagem de consulta de dados) Select
+DML(Linguagem de manipulação de dados) Insert, Update, Delete
+DDL(Linguagem de definição de dados): Create, alter, drop
+DCL(Linguagem de controle de dados) Grant, revoke
+TCL(Linguagem de controle de transações) Begin, commit, rollback
+
+Sintaxe básica: nomenclatura
+
+Os nomes devem começar com uma letra ou com um caracter de sublinhado
+Os nomes podem conter letras, números e caracteres de sublinhado
+Os sistemas possuem sensibilidade a maisculas e minusculas
+
+Modelo de entidade relacionamento e diagrama de entidade relacionamento
+
+As entidades são nomeadas com substantivo concreto ou abstrato que representem de forma clara sua função dentro do dominio
+
+Os atributos são caracteristicas ou propriedade das entidades. Eles descrevem informações específicas sobre uma entidade.
+
+Relacionamentos entre Tabelas: O relacionamento entre tabelas é criado por meio de chaves, são elas: chaves primárias e estrangeiras. A chave primária em uma tabela é usada para identificar exclusivamente cada registro nessa tabela, enquanto a chave estrangeira em outra tabela é uma referência à chave primária da primeira tabela. Isso cria uma associação entre as tabelas.
+
+Por exemplo, se tivermos uma tabela de "Clientes" e uma tabela de "Pedidos", a tabela de "Pedidos" pode ter uma chave estrangeira que se refere à chave primária da tabela de "Clientes". Isso permite que consultas combinem dados relacionados entre as duas tabelas.
+
+Cardinalidade: A cardinalidade informa a quantidade de associações entre registros nas tabelas relacionadas. São elas:
+
+Um-para-Um (1:1): Cada registro em uma tabela está associado a no máximo um registro em outra tabela.
+Um-para-Muitos (1:N): Cada registro em uma tabela pode estar associado a vários registros em outra tabela, mas cada registro nessa outra tabela está associado a no máximo um registro na primeira tabela.
+Muitos-para-Muitos (N:M): Cada registro em uma tabela pode estar associado a vários registros na outra tabela, e vice-versa. Geralmente é utilizado uma terceira tabela chamada de tabela associativa ou auxiliar para ligar ambas as tabelas.
+
+Criar diagramas com inteligência articial
+https://app.quickdatabasediagrams.com/

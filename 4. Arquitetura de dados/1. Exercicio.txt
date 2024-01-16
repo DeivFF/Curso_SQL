@@ -1,0 +1,19 @@
+Explique por que a habilidade de abstração, derivada do pensamento computacional, é fundamental no processo de modelagem de dados.
+
+Destaque a importância de passar do geral para o específico no método principal de modelagem de dados, considerando a definição de requisitos funcionais e não funcionais.
+
+Como a escolha do modelo influencia a organização de informações e operações em um banco de dados?
+
+Descreva as características principais do modelo conceitual de alto nível, especialmente em relação ao modelo de entidade-relacionamento.
+
+Comente sobre a evolução do modelo conceitual com a incorporação de conceitos da programação orientada a objetos.
+
+Qual é o papel do modelo representacional na estrutura de dados de um banco de dados? Como ele atua como uma ligação entre o modelo conceitual e o modelo físico?
+
+Explique como o modelo representacional permite a definição de construções usando linguagens como SQL. Como essa abordagem se aproxima da implementação concreta?
+
+Quais são as decisões específicas envolvidas na implementação detalhada, conforme destacado no modelo físico de um banco de dados?
+
+Como os avanços tecnológicos contribuíram para a extensão e aprimoramento do modelo conceitual no contexto da modelagem de dados?
+
+Destaque a natureza comunicativa dos modelos conceitual, representacional e físico, ressaltando os propósitos específicos que cada um deles atende em um sistema de banco de dados.

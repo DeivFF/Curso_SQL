@@ -1,0 +1,16 @@
+Um esquema é essencialmente uma descrição concisa da estrutura do banco de dados, incluindo objetos e atributos relacionados. Pode ser pensado como um esqueleto ou sinônimo, representado visualmente por meio de um diagrama. No entanto, é importante distinguir o esquema do que está realmente armazenado no banco de dados. O foco aqui é na estrutura que servirá como base para a persistência dos dados.
+
+Modelo Relacional e Diagrama:
+No contexto do modelo relacional, utilizamos diagramas para representar o esquema. Por exemplo, consideremos um esquema relacionado a um livro de referência com entidades como estudante, curso e requisitos. O diagrama destaca a estrutura essencial, excluindo informações desnecessárias para o contexto, como preferências de filme de um estudante.
+
+Instâncias e Dados:
+É crucial entender que o esquema não possui instâncias nem dados. As instâncias referem-se às ocorrências reais de dados em um momento específico. O esquema é o esqueleto, enquanto as instâncias são as informações concretas contidas no banco de dados.
+
+Estados e Mudanças:
+O estado de um banco de dados refere-se a uma configuração específica em um determinado momento. Inicialmente, o estado é vazio, alinhado com o esquema. À medida que realizamos operações de inserção, atualização ou exclusão, o estado do banco de dados muda. Essas mudanças refletem a evolução do sistema, resultando em um novo estado com uma quantidade diferente de dados.
+
+Desafios na Modificação de Esquema:
+Modificar o esquema não é uma tarefa simples, pois envolve a atualização das regras do esquema. Embora modernos SGBDs facilitem esse processo em comparação com abordagens tradicionais, ainda requer cuidado devido à complexidade das mudanças.
+
+Metadados e Consultas:
+O esquema é utilizado pelo SGBD para consultas e para compreender a estrutura do banco de dados. Os metadados desempenham um papel crucial, fornecendo descrições detalhadas do esquema, construtores e regras associadas.
