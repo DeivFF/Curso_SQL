@@ -1,0 +1,38 @@
+Uma entidade fraca em modelagem de dados é uma entidade que não possui uma chave primária unica. Em vez disso, ela depende de uma entidade chamada "entidade proprietária" para obter sua identificação única. Uma entidade fraca é caracterizada por não ter um identificador próprio que a distinga de outras instâncias da mesma entidade.
+
+As entidades fracas são frequentemente associadas a entidades proprietárias em um relacionamento chamado de "identificação total". Isso significa que a entidade fraca é identificada completamente pela combinação de sua chave primária e a chave primária da entidade proprietária.
+
+Características de entidades fracas incluem:
+
+Dependência de uma Entidade Proprietária: Uma entidade fraca depende de outra entidade (entidade proprietária) para sua identificação única.
+
+Não Possui Chave Primária Independente: Por si só, uma entidade fraca não tem uma chave primária única.
+
+Relacionamento de Identificação Total: A combinação da chave primária da entidade fraca e da chave primária da entidade proprietária é usada para identificar exclusivamente uma instância da entidade fraca.
+
+Exemplo:
+Considere um modelo de dados para representar um sistema de reservas em um hotel. A entidade "Quarto" pode ser uma entidade forte com uma chave primária própria. No entanto, a entidade "Fechadura Eletrônica" pode ser uma entidade fraca, pois depende da entidade "Quarto" para sua identificação única. Nesse caso, a chave primária da "Fechadura Eletrônica" seria composta pela chave primária do "Quarto" e um número único associado a cada fechadura dentro desse quarto.
+
+| Número do Quarto(Chave Primária) | Tipo de Quarto  | Capacidade |
+|----------------------------------|-----------------|------------|
+| 101                              | Suíte           | 2          |
+| 102                              | Padrão          | 1          |
+| 103                              | Deluxe          | 3          |
+ 
+
+| Número do Quarto (Chave Primária composta) | Número da Fechadura Eletrônica (Chave Primária composta) |
+|--------------------------------------------|----------------------------------------------------------|
+| 101                                        | 001                                                      |
+| 101                                        | 002                                                      |
+| 102                                        | 001                                                      |
+| 103                                        | 001                                                      |
+| 103                                        | 002                                                      |
+
+
+Exemplo Simplificado:
+
+Entidade Forte: Quarto (com chave primária própria, como Número do Quarto)
+Entidade Fraca: Fechadura Eletrônica (dependendo da chave primária do Quarto e de um número de fechadura único)
+A representação de entidades fracas em um modelo de dados é uma prática comum para lidar com casos em que a identificação única depende de outra entidade relacionada.
+
+Em um modelo de dados, uma entidade fraca frequentemente tem uma chave primária composta por duas ou mais partes. A chave primária da entidade fraca é formada pela combinação de sua própria chave primária parcial (parte da chave) e a chave primária da entidade forte à qual está relacionada. Isso é conhecido como uma relação de identificação total.

@@ -1,0 +1,19 @@
+Explique a função dos Bancos de Dados Armazenados (Stored Databases) e por que são considerados instâncias reais do banco de dados.
+
+Qual é a responsabilidade do Runtime Database Processor, e como ele contribui para o processamento em tempo real de comandos no banco de dados?
+
+Descreva o papel do System Catalog ou Dictionary no gerenciamento eficiente do banco de dados, incluindo as informações que ele mantém.
+
+O que é o Sistema de Controle de Concorrência em um banco de dados, e por que é crucial para lidar com múltiplos usuários acessando simultaneamente?
+
+Explique a importância do Sistema de Backup e Recuperação em termos de segurança de dados, e quais são suas principais funções.
+
+Qual é a responsabilidade do Gerenciador de Armazenamento de Dados em um banco de dados, e como ele otimiza o armazenamento considerando discos e memória?
+
+Descreva a função do DDL Compiler e do DML Compiler em um banco de dados, e como esses compiladores lidam com comandos de definição e manipulação de dados.
+
+O que engloba a Programação de Aplicações em um banco de dados, e por que é importante para desenvolvedores que criam aplicativos interativos?
+
+Explique a finalidade dos Comandos SQL Privilegiados e como eles estão relacionados a operações de alto nível de privilégio no banco de dados.
+
+Descreva o papel do Dicionário de Dados em um banco de dados, incluindo as informações que mantém sobre design, padrões de utilização e descrições de aplicações.

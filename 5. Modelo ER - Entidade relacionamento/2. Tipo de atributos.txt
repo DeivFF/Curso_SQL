@@ -1,0 +1,17 @@
+Na modelagem de banco de dados, existem vários tipos de atributos que podem ser atribuídos às entidades. Aqui estão alguns tipos comuns de atributos:
+
+Atributo Simples: Representa uma unidade atômica de informação que não pode ser subdividida. Exemplos incluem nome, idade, salário, etc.
+
+Atributo Composto: Consiste em subpartes menores que, juntas, formam o atributo completo. Exemplos incluem endereço (rua, cidade, estado, código postal) ou nome completo (primeiro nome, sobrenome).
+
+Atributo Multivalorado: Pode ter múltiplos valores associados a uma única entidade. Por exemplo, um cliente pode ter vários números de telefone ou vários endereços de e-mail.
+
+Atributo Derivado: Pode ser derivado de outros atributos na mesma entidade. Por exemplo, a idade de uma pessoa pode ser derivada da data de nascimento.
+
+Atributo Chave Primária: Identifica exclusivamente uma instância da entidade. É usado para garantir a unicidade de cada registro na tabela, esta chave faz referência a chave Estrangeira de outra tabela.
+
+Atributo Chave Estrangeira: Referencia uma chave primária em outra tabela. Usado para estabelecer relações entre tabelas em um banco de dados relacional, a relação ocorre por meio do relacionamento entre chave primária e estrangeira.
+
+Atributo Único: Garante que todos os valores em uma coluna são únicos. Isso é semelhante a uma chave primária, mas não é necessariamente uma chave primária.
+
+Atributo Nulo: Pode ter um valor nulo, indicando a ausência de dados. Isso é diferente de um valor vazio ou zero.

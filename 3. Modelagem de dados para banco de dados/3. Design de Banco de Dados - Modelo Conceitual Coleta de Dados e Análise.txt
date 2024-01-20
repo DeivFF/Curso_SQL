@@ -1,0 +1,43 @@
+Design de Banco de Dados - Projeto Conceitual: Coleta de Dados e Análise
+
+O projeto conceitual de um banco de dados é o ponto inicial no processo de design, onde se busca representar
+as informações de forma clara e abstrata. Esse estágio
+envolve a coleta de dados e a análise detalhada para definir requisitos, relações e visões essenciais para o
+sistema.
+
+Linguagem Textual: Coleta de Dados e Análise
+
+Na fase inicial, utiliza-se uma linguagem textual para compreender e expressar os requisitos do sistema. É a
+fase em que a equipe de desenvolvimento e o cliente discutem, escrevem e refinam os detalhes do que será
+modelado. Por exemplo, ao projetar um sistema de vendas, identifica-se que um pedido pode ter diferentes
+estados, como "realizado" ou "cancelado". Essa etapa é crucial para entender as nuances do ambiente a ser
+modelado.
+
+Linguagem Gráfica: Modelagem de Dados com Diagramas de Entidade-Relacionamento (DER)
+
+Posteriormente, o projeto conceitual avança para a linguagem gráfica, utilizando Diagramas de Entidade-
+Relacionamento (DER). Essa abordagem visual auxilia na representação das relações e entidades de forma clara.
+As entidades, como "cliente", "pedido" e "venda", são representadas por retângulos, enquanto os
+relacionamentos entre elas são indicados por linhas. Por exemplo, uma linha conecta "pedido" e "cliente" para
+expressar a relação entre essas entidades.
+
+Coleta de Dados: Importância e Tipos de Relacionamentos
+
+Durante a coleta de dados, é fundamental entender a importância de cada atributo e determinar os tipos de
+relacionamentos entre entidades. Perguntas-chave são respondidas nessa fase, como: Quais são os atributos
+essenciais para representar um cliente? Como as vendas se relacionam com os pedidos? Essas questões guiam a
+construção do modelo conceitual.
+
+Análise: Visões e Requisitos
+
+A análise é o processo de verificar se as informações coletadas são suficientes para criar um modelo que
+represente efetivamente o contexto. Nesse estágio, são definidas visões específicas para diferentes grupos de
+usuários. Por exemplo, enquanto o setor de vendas pode precisar de dados sobre clientes e pedidos, o setor
+financeiro pode se concentrar em informações de transações e pagamentos.
+
+Conclusão do Projeto Conceitual
+
+Ao final do projeto conceitual, temos um entendimento claro dos requisitos, das relações entre entidades e das
+diferentes perspectivas necessárias. Esse é o alicerce sobre o qual o projeto lógico e físico do banco de
+dados será construído. A transição para a linguagem gráfica, com o uso de DER, facilita a comunicação e
+visualização do modelo, tornando-o mais acessível para todos os envolvidos no desenvolvimento do sistema.

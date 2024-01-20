@@ -1,0 +1,7 @@
+O modelo cliente-servidor é uma maneira de organizar a arquitetura de sistemas. Antigamente, tínhamos uma arquitetura centralizada, onde todos os recursos estavam em uma única máquina grande. Com o avanço da tecnologia, surgiram arquiteturas distribuídas, onde cada parte do sistema se preocupa com sua função, e a comunicação entre elas acontece pela rede.
+
+Na arquitetura cliente-servidor, temos a ideia de "stateless", o que significa que cada lado da comunicação não guarda o estado do outro. Por exemplo, um cliente pode solicitar informações a um servidor, e o servidor responde, mas não guarda informações sobre o cliente.
+
+Existem cenários onde clientes e servidores têm funções específicas. Alguns clientes apenas acessam dados, enquanto outros podem armazenar e inserir dados. Além disso, pode haver servidores que desempenham o papel de cliente também.
+
+Esse modelo é mais realista e compatível com a forma como as equipes e ferramentas são desenvolvidas hoje em dia. Podemos pensar nessa arquitetura como parte de uma abordagem de três camadas, onde temos a interface, a aplicação e o banco de dados, todos trabalhando juntos para fornecer funcionalidades ao usuário.

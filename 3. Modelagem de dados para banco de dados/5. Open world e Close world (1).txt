@@ -1,0 +1,31 @@
+O conceito de mundo fechado é uma proposição que afirma que, dentro do contexto modelado, tudo que está no banco de dados é verdadeiro. O que está fora do escopo é considerado falso. Isso cria uma lógica formal para o sistema.
+
+Vamos considerar um exemplo simples de Close World Assumption em um contexto de banco de dados. Suponha que você tenha um banco de dados que mantém informações sobre os funcionários de uma empresa. O banco de dados contém tabelas para armazenar detalhes como ID do funcionário, nome, cargo, e salário.
+
+| ID | Nome     | Cargo      | Salário   |
+|----|----------|------------|-----------|
+| 1  | João     | Gerente    | 5000      |
+| 2  | Maria    | Analista   | 3000      |
+| 3  | Carlos   | Programador| 3500      |
+
+Aqui, o Close World Assumption seria aplicado da seguinte maneira: se um funcionário não estiver listado na tabela, presume-se que essa pessoa não é um funcionário da empresa. Portanto, a ausência de uma informação na tabela de "Funcionários" implica que a pessoa não é um funcionário da empresa.
+
+Se alguém perguntar se existe um funcionário chamado "Ana", o sistema com Close World Assumption responderá negativamente, porque não há uma entrada correspondente na tabela de "Funcionários" para "Ana".
+
+Então, em resumo, a premissa do Mundo Fechado (Close World Assumption) é que todas as informações relevantes são explicitamente declaradas e armazenadas no banco de dados. Se não estiver no banco de dados, presume-se que seja falso.
+
+Há um outro modelo chamado Chamado Open world Assumption que contrapõe o modelo Close world Assuption
+
+Suponha que tenhamos um banco de dados que mantém informações sobre livros em uma biblioteca, incluindo detalhes como título, autor e número de cópias disponíveis.
+
+| ID | Título           | Autor           | Cópias Disponíveis |
+|----|------------------|-----------------|--------------------|
+| 1  | "Aventuras"      | João Silva      | 5                  |
+| 2  | "Viagem ao Centro da Terra" | Júlia Santos | 3           |
+| 3  | "Poesias Selecionadas" | Carlos Mendes  | 0                |
+
+Aqui, o Open World Assumption seria aplicado da seguinte maneira: se um livro não estiver listado na tabela, isso não implica automaticamente que o livro não exista ou não está disponível. A ausência de uma informação na tabela de "Livros" não é interpretada como uma negação, mas sim como uma falta de informação.
+
+Suponha que alguém pergunte se existe um livro chamado "Histórias Fantásticas". O sistema com Open World Assumption responderia de forma neutra, indicando que não há informação suficiente na tabela para determinar se o livro existe ou não. Pode haver livros que ainda não foram catalogados no banco de dados.
+
+Portanto, no Open World Assumption, a ausência de uma informação no banco de dados não implica automaticamente que a informação seja falsa. A verdade ou falsidade de uma afirmação é incerta até que seja consultada ou adicionada ao sistema.

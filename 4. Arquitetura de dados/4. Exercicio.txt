@@ -1,0 +1,19 @@
+Qual é o papel da Linguagem de Definição de Dados (DDL) em um Sistema de Gerenciamento de Banco de Dados (SGBD)?
+
+Como a DDL contribui para a criação e definição da estrutura do banco de dados?
+
+Explique a separação de funções entre o designer e o administrador do banco de dados (DBA) em SGBDs modernos, especialmente em relação à parte física e ao uso de índices.
+
+O que é a Linguagem de Definição de Armazenamento (SDL) e em que situações ela é utilizada em SGBDs?
+
+Qual é a função da Linguagem de Manipulação de Dados (DML) em um SGBD?
+
+Descreva as duas formas da DML e como elas diferem em termos de operações no banco de dados.
+
+Como a DML contribui para salvar e usar dados no contexto de um banco de dados?
+
+Por que é essencial compreender as linguagens DDL e DML para usar e administrar SGBDs eficientemente?
+
+Quais são os principais comandos associados à DDL e como eles são utilizados na prática?
+
+Como a compreensão das linguagens em Bancos de Dados pode influenciar o desenvolvimento de aplicações e a administração de sistemas de forma mais abrangente?

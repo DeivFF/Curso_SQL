@@ -1,0 +1,37 @@
+Bancos de Dados Armazenados (Stored Databases): Esta é a área onde os dados são persistentemente armazenados. São as instâncias reais do banco de dados que contêm as informações que os usuários precisam acessar e manipular.
+
+Runtime Database Processor (Processador de Banco de Dados em Tempo Real): Este componente é responsável por processar os comandos que chegam ao banco de dados em tempo real. Ele executa as transações e garante que as operações sejam realizadas conforme necessário.
+
+System Catalog or Dictionary (Catálogo ou Dicionário do Sistema): Este componente mantém informações detalhadas sobre o banco de dados, como esquemas, tabelas, relacionamentos e restrições. É uma parte essencial para o gerenciamento e a organização eficientes do banco de dados.
+
+Sistema de Controle de Concorrência: Lidando com múltiplos usuários acessando simultaneamente o banco de dados, esse subsistema garante que as operações ocorram de maneira concorrente sem interferências indesejadas.
+
+Sistema de Backup e Recuperação: Este subsistema é vital para a segurança dos dados. Ele realiza backups regulares e fornece mecanismos de recuperação em caso de falhas ou perdas de dados.
+
+Gerenciador de Armazenamento de Dados: Responsável por gerenciar o armazenamento eficiente dos dados, considerando tanto os discos quanto a memória. Isso inclui otimizações como o armazenamento em cache para melhorar o desempenho.
+
+Interfaces de Usuário:
+
+DDL Compiler: Compiler para comandos DDL (Data Definition Language) que envolvem a definição e a modificação de esquemas e estruturas de dados.
+
+DML Compiler: Compiler para comandos DML (Data Manipulation Language) que envolvem operações como inserção, atualização e exclusão de dados.
+
+Programação de Aplicações: Ferramentas e linguagens para desenvolvedores que estão criando aplicativos que interagem com o banco de dados. Isso inclui a capacidade de incorporar SQL em linguagens de programação.
+
+Comandos SQL Privilegiados: Ferramentas e mecanismos para executar comandos SQL que envolvem operações de alto nível de privilégio, como criação e modificação de esquemas.
+
+Dicionário de Dados: Mantém informações detalhadas sobre design, padrões de utilização e descrições de aplicações, fornecendo dados adicionais que são valiosos para o projeto e a modificação contínua do banco de dados.
+
+Ferramentas de Design: Ferramentas que auxiliam na criação de projetos conceituais, modelos conceituais e designs de banco de dados. Exemplos incluem ferramentas como o ERD (Entity-Relationship Diagram) Designer.
+
+Ferramentas e Mecanismos Adicionais:
+
+Backup e Recuperação: Ferramentas dedicadas para realizar backups e garantir a recuperação eficiente de dados.
+
+Otimização do Armazenamento: Mecanismos para reorganizar o armazenamento de dados, visando otimizar o desempenho do banco de dados.
+
+Monitoramento e Estatísticas: Ferramentas para monitorar o desempenho do banco de dados, coletando estatísticas e métricas para análise.
+
+Ferramentas de Acesso: Terminal, Workstations e outras ferramentas de acesso que evoluíram com o tempo, tornando-se mais acessíveis e amigáveis ao usuário.
+
+Ferramentas de Design Gráfico: Ferramentas visuais, como o PowerDesigner, que permitem criar modelos visuais de bancos de dados.

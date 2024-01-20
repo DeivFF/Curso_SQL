@@ -1,0 +1,9 @@
+"Mini Mundo" é um termo que frequentemente é usado em contextos de modelagem de banco de dados, especialmente durante a fase de projeto conceitual. Nesse contexto, "mini mundo" refere-se à representação simplificada da parte do mundo real que está sendo modelada pelo sistema de banco de dados. O objetivo é identificar e entender as entidades, relacionamentos e regras de negócios relevantes para o sistema que está sendo desenvolvido.
+
+Ao criar um sistema de banco de dados, os desenvolvedores começam por compreender o "mini mundo" que o sistema irá abordar. Isso envolve identificar as entidades principais (como pessoas, objetos ou conceitos), os relacionamentos entre essas entidades e as regras de negócios que governam a interação entre elas.
+
+O processo geralmente envolve a criação de modelos conceituais, como o Modelo Entidade-Relacionamento (ER), que descreve as entidades, os atributos dessas entidades e os relacionamentos entre elas. Essa fase é essencial para garantir que o sistema de banco de dados seja projetado de maneira a atender às necessidades específicas do domínio em questão.
+
+Para ilustrar, imagine um "mini mundo" que representa um sistema de biblioteca. As entidades poderiam incluir "Livro", "Usuário", e "Empréstimo", e os relacionamentos poderiam ser "Usuário faz Empréstimo de Livro". Ao compreender esse "mini mundo", os desenvolvedores podem criar um modelo de dados que seja eficiente e que reflita as operações e relações que ocorrem na biblioteca real.
+
+Portanto, o termo "mini mundo" destaca a importância de entender o domínio específico que está sendo modelado antes de iniciar o projeto de um sistema de banco de dados. Isso ajuda a garantir que o sistema seja relevante, eficiente e atenda às necessidades do mundo real que ele representa.

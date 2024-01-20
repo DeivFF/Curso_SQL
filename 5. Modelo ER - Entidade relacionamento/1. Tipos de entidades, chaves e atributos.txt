@@ -1,0 +1,38 @@
+O Modelo de Entidade-Relacionamento (MER) é uma ferramenta visual fundamental no design de banco de dados,
+permitindo uma representação clara das entidades, relacionamentos, chaves e atributos que compõem o sistema.
+Ao explorar os elementos-chave do MER, podemos aprofundar nossa compreensão sobre como organizar e estruturar
+eficientemente as informações.
+
+As entidades são objetos de dados que representam elementos significativos no domínio do problema. Elas podem
+variar desde entidades concretas, como "cliente" e "produto", até entidades abstratas que representam
+conceitos como "pedido" ou "transação". Cada entidade é identificada por um nome exclusivo e é essencial para
+a compreensão do escopo do sistema.
+
+No contexto do MER, as entidades podem ser classificadas como entidades fortes ou entidades fracas. Entidades
+fortes são aquelas que têm uma chave primária única para identificação, enquanto entidades fracas dependem de
+outra entidade para sua identificação, utilizando uma chave parcial. Essa distinção ajuda a refletir com
+precisão as relações entre diferentes elementos no sistema.
+
+As chaves desempenham um papel crucial na identificação única de cada instância de uma entidade. A chave
+primária é a chave principal que fornece uma identificação única, garantindo a integridade dos dados. Já as
+chaves estrangeiras são utilizadas para estabelecer relações entre entidades, conectando-as e criando uma rede
+coesa de informações.
+
+Os atributos representam as características ou propriedades específicas associadas a uma entidade. Eles ajudam
+a detalhar e definir as informações armazenadas dentro do sistema. Por exemplo, em uma entidade "cliente", os
+atributos podem incluir nome, endereço e número de telefone. A escolha cuidadosa dos atributos é crucial para
+garantir que todas as informações relevantes sejam capturadas de maneira eficiente.
+
+Além dos atributos simples, o MER permite a representação de atributos compostos e multivalorados. Atributos
+compostos consistem em subpartes que, juntas, formam o atributo completo, enquanto atributos multivalorados
+podem armazenar múltiplos valores associados a uma única entidade. Essa flexibilidade permite uma
+representação mais precisa e rica das informações no banco de dados.
+
+Um exemplo de atributo composto seria representado na tabela/entidade abaixo, as informações de "Rua, cidade,
+Estado e código postal" juntas formam o atributo "endereço". Um atributo composto pode virar uma entidade.
+
+
+| ID | Nome     | Telefone   | Rua             | Cidade        | Estado | Código Postal |
+|----|----------|------------|------------------|---------------|--------|---------------|
+| 1  | João     | 123-456789 | Rua da Amizade  | Cidade A      | SP     | 12345-678     |
+| 2  | Maria    | 987-654321 | Av. Principal   | Cidade B      | RJ     | 54321-876     |

@@ -1,0 +1,7 @@
+Explique a diferença entre arquitetura centralizada e arquitetura distribuída, destacando como a arquitetura cliente-servidor se encaixa no contexto das arquiteturas distribuídas.
+
+O que significa a ideia de "stateless" na arquitetura cliente-servidor, e como isso se relaciona com a comunicação entre cliente e servidor?
+
+Dê um exemplo prático de como a arquitetura cliente-servidor pode ser aplicada, destacando as funções específicas de clientes e servidores.
+
+Como a arquitetura cliente-servidor é considerada parte de uma abordagem de três camadas? Explique as camadas mencionadas e como trabalham juntas.

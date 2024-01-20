@@ -1,0 +1,12 @@
+Quando falamos sobre arquitetura em Bancos de Dados, é muito importante entender a linguagem usada. Em Sistemas de Gerenciamento de Bancos de Dados (SGBDs), há diferentes linguagens, cada uma com um trabalho específico. Primeiro, temos a Linguagem de Definição de Dados (DDL), que é crucial para criar e definir a estrutura do banco de dados. Com comandos como "CREATE", ela permite que o administrador do banco de dados (DBA) e o designer organizem o banco de dados, criando tanto o modelo relacional quanto o modelo físico.
+
+Em alguns SGBDs mais modernos, é interessante notar que existe uma separação clara entre as funções do designer e do DBA, especialmente em relação à parte física e ao uso de índices. Nesses casos, entra em cena a Linguagem de Definição de Armazenamento (SDL), uma linguagem específica para dizer como os dados e os índices são guardados.
+
+Além disso, temos a Linguagem de Manipulação de Dados (DML), que é fundamental para salvar e usar dados. A DML tem duas formas: uma abordagem de alto nível, onde as operações no banco de dados acontecem em grupos e por tempo; e uma abordagem de baixo nível, que precisa de aplicativos separados para essas operações. A DML permite fazer coisas como adicionar, pegar e atualizar dados, dando flexibilidade para interagir com o banco de dados.
+
+A maioria dos desenvolvedores usa principalmente a DDL para definir dados. A DML, por outro lado, é muito usada para operações que mexem com dados, dando bastante liberdade para adicionar, pegar e atualizar informações no banco de dados. Compreender essas linguagens é essencial para usar e administrar SGBDs de maneira eficiente. Nos próximos tópicos, vamos explorar interfaces e ambientes de SGBDs para entender tudo de forma completa.
+
+
+
+
+
