@@ -1,0 +1,51 @@
+Um relacionamento N-ário, também conhecido como relacionamento ternário ou superior, refere-se a uma associação entre mais de duas entidades em um modelo de dados. Vamos criar um exemplo de relacionamento quaternário (N = 4) para ilustrar esse conceito. Considere um sistema de gerenciamento de projetos, onde temos as entidades "Projeto", "Funcionário", "Tarefa" e "Departamento". Um relacionamento quaternário chamado "Atribuído A" pode ser definido para mostrar como funcionários são atribuídos a tarefas específicas em projetos de um determinado departamento.
+
+
+Projeto:
+
+A tabela que armazena informações sobre os projetos.
+
+| IDProjeto | NomeProjeto          |
+|-----------|----------------------|
+| 1         | Desenvolvimento Web  |
+| 2         | Implantação de Sist. |
+
+Equipe:
+
+A tabela que armazena informações sobre os membros da equipe.
+
+| IDEquipe | NomeMembro  |
+|----------|-------------|
+| 101      | João        |
+| 102      | Maria       |
+
+
+Atividade:
+
+A tabela que armazena informações sobre as atividades do projeto.
+
+| IDAtividade | NomeAtividade   |
+|-------------|-----------------|
+| 201         | Desenvolvimento |
+| 202         | Testes          |
+
+Departamento:
+
+A tabela que armazena informações sobre os departamentos da empresa.
+
+| IDDepartamento | NomeDepartamento          |
+|----------------|---------------------------|
+| 301            | Desenvolvimento backend   |
+| 302            | Desenvolvimento frontend  |
+
+Relacionamento Quaternário ("Atribuído A"):
+
+A tabela que representa o relacionamento quaternário.
+
+| IDProjeto | IDEquipe | IDAtividade | IDDepartamento |
+|-----------|----------|-------------|----------------|
+| 1         | 101      | 201         | 301            |
+| 1         | 102      | 202         | 302            |
+| 2         | 101      | 201         | 301            |
+
+Ou seja, o projeto "Desenvolvimento web" está atribuído a "João" e "Maria", "João realiza desenvolvimento" e "Maria realiza testes", "João faz parte do setor de desenvolvimento backend", enquanto "Maria faz parte do setor desenvolvimento frontend"

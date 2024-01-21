@@ -1,0 +1,77 @@
+A cardinalidade em modelagem de dados refere-se à quantidade de instâncias em uma entidade que podem estar associadas a uma instância correspondente em outra entidade através de um relacionamento. Ela define a quantidade de ocorrências permitidas em ambos os lados de um relacionamento e é expressa por meio de termos como "um para um" (1:1), "um para muitos" (1:N), "muitos para um" (N:1) e "muitos para muitos" (N:N).
+
+Um para Um (1:1): - significa que uma instância em uma entidade está associada a no máximo uma instância em outra entidade, e vice-versa. Vamos considerar duas tabelas: "Pessoa" e "Passaporte". Cada pessoa tem um único passaporte, e cada passaporte está associado a uma única pessoa, ou seja, não é possível um passaporte ser de duas pessoas ou uma pessoa ter dois passaportes. Aqui está um exemplo visual.
+
+TABELA PESSOA
+
+| ID_Pessoa(Chave primária) | Nome      | Idade | Endereço         |
+|---------------------------|-----------|-------|------------------|
+| 1                         | João      | 30    | Rua A, Cidade X  |
+| 2                         | Maria     | 25    | Rua B, Cidade Y  |
+
+TABELA PASSAPORTE
+
+| ID_Passaporte | Numero     | DataExpiracao  | ID_Pessoa (Chave Estrangeira) |
+|---------------|------------|----------------|-------------------------------|
+| 101           | AB123456   | 2025-01-01     | 1                             |
+| 102           | CD789012   | 2023-05-15     | 2                             |
+
+
+
+Um para Muitos (1:N): Indica que uma instância em uma entidade está associada a várias instâncias em outra entidade, mas cada instância nesta última está associada a no máximo uma instância na primeira entidade. Vamos considerar duas tabelas: "Departamento" e "Funcionario". Cada funcionário terá apenas um departamento, mas cada departamento poderá ter mais de um funcionário.
+
+| ID_Departamento | Nome       | Localizacao     |
+|------------------|------------|-----------------|
+| 1                | TI         | Sala 301        |
+| 2                | Vendas     | Sala 102        |
+
+
+| ID_Funcionario | Nome      | Cargo         | Salario | ID_Departamento (Chave Estrangeira) |
+|----------------|-----------|---------------|---------|------------------------------------|
+| 101            | João      | Desenvolvedor | 5000    | 1                                  |
+| 102            | Maria     | Vendedor      | 4000    | 2                                  |
+| 103            | Carlos    | Analista      | 6000    | 1                                  |
+| 104            | Ana       | Vendedor      | 4500    | 2                                  |
+
+
+Um relacionamento N:N (muitos para muitos) ocorre quando entidades de um tipo estão associadas a várias entidades de outro tipo e vice-versa. Por exemplo, considere um cenário em que você tem entidades "Estudante" e "Curso". Um estudante pode estar matriculado em vários cursos, e um curso pode ter vários estudantes matriculados. Esse é um exemplo clássico de um relacionamento N:N.
+
+Para representar esse tipo de relacionamento em um banco de dados relacional, é comum utilizar uma tabela associativa, também conhecida como tabela de junção ou tabela de associação. Essa tabela serve como um intermediário entre as tabelas principais (no exemplo, as tabelas de Estudante e Curso) e contém informações adicionais sobre a associação entre elas.
+
+TABELA ESTUDANTE
+
+| EstudanteID | Nome    |
+|-------------|---------|
+| 1           | João    |
+| 2           | Maria   |
+| 3           | Pedro   |
+
+TABELA CURSO
+
+| CursoID | Nome       |
+|---------|------------|
+| 101     | Matemática |
+| 102     | História   |
+| 103     | Inglês     |
+
+TABELA MATRICULA (ASSOCIATIVA)
+
+| EstudanteID | CursoID |
+|-------------|---------|
+| 1           | 101     |
+| 1           | 102     |
+| 2           | 101     |
+| 3           | 102     |
+| 3           | 103     |
+
+Neste exemplo, a tabela Matricula armazena as associações entre estudantes e cursos. Cada linha na tabela representa a matrícula de um estudante em um curso específico. O uso dessa tabela associativa resolve o problema de como armazenar informações sobre um relacionamento N:N sem duplicação de dados nas tabelas principais.
+
+A razão para o uso de uma tabela associativa inclui:
+
+Evitar redundância de dados: Sem a tabela associativa, seria necessário duplicar informações nas tabelas principais, o que aumentaria a complexidade e poderia levar a inconsistências nos dados.
+
+Facilitar consultas: A tabela associativa torna mais fácil realizar consultas que envolvem a busca de informações sobre as associações entre as entidades.
+
+Manter a integridade referencial: A tabela associativa ajuda a manter a integridade referencial, garantindo que as associações entre as entidades sejam válidas.
+
+

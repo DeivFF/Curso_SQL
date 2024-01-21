@@ -1,0 +1,29 @@
+Ser auto-relacional significa que uma entidade em um banco de dados está associada a si mesma por meio de um relacionamento. Em outras palavras, a entidade possui uma relação consigo mesma.
+
+Existem dois tipos principais de auto-relacionamento:
+
+Relacionamento Hierárquico:
+
+Nesse caso, a entidade está relacionada a si mesma em uma estrutura hierárquica. Um exemplo comum é uma tabela que representa uma estrutura de organização, como uma tabela de funcionários em que cada linha pode ter um relacionamento com outra linha para indicar a relação hierárquica entre os funcionários e seus supervisores.
+
+| ID Funcionário | Nome       | ID Supervisor |
+|----------------|------------|---------------|
+| 1              | João       | null          |
+| 2              | Maria      | 1             |
+| 3              | Pedro      | 1             |
+
+Neste exemplo, o funcionário João é o supervisor dos funcionários Maria e Pedro. O campo "ID Supervisor" estabelece a relação hierárquica.
+
+Relacionamento de Autoassociação:
+
+Nesse caso, a entidade está relacionada a si mesma de uma maneira que não é estritamente hierárquica. Um exemplo pode ser uma tabela de usuários em um sistema em que cada usuário pode ter uma relação com outros usuários para indicar conexões ou amizades.
+
+| ID Usuário | Nome    | ID Amigo  |
+|------------|---------|-----------|
+| 1          | Ana     | 2         |
+| 2          | Bob     | 1         |
+| 3          | Carlos  | 1         |
+
+Neste exemplo, Ana é amiga de Bob e Carlos, e a relação é estabelecida pelo campo "ID Amigo".
+
+Esses autorelacionamentos são úteis em situações em que as entidades precisam se relacionar consigo mesmas de alguma forma. A implementação específica depende do contexto da aplicação e dos requisitos do sistema.
