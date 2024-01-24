@@ -20,13 +20,13 @@ TABELA PASSAPORTE
 
 Um para Muitos (1:N): Indica que uma instância em uma entidade está associada a várias instâncias em outra entidade, mas cada instância nesta última está associada a no máximo uma instância na primeira entidade. Vamos considerar duas tabelas: "Departamento" e "Funcionario". Cada funcionário terá apenas um departamento, mas cada departamento poderá ter mais de um funcionário.
 
-| ID_Departamento | Nome       | Localizacao     |
+| ID_Departamento  | Nome       | Localizacao     |
 |------------------|------------|-----------------|
 | 1                | TI         | Sala 301        |
 | 2                | Vendas     | Sala 102        |
 
 
-| ID_Funcionario | Nome      | Cargo         | Salario | ID_Departamento (Chave Estrangeira) |
+| ID_Funcionario | Nome      | Cargo         | Salario | ID_Departamento (Chave Estrangeira)|
 |----------------|-----------|---------------|---------|------------------------------------|
 | 101            | João      | Desenvolvedor | 5000    | 1                                  |
 | 102            | Maria     | Vendedor      | 4000    | 2                                  |
