@@ -1,0 +1,28 @@
+Em SQL, um statement (ou instrução) é uma unidade de execução que realiza uma operação específica no banco de dados. Isso pode incluir a criação, modificação ou exclusão de objetos de banco de dados, bem como a consulta ou manipulação de dados.
+
+Exemplos Práticos:
+
+CREATE TABLE (Criar Tabela):
+
+CREATE TABLE Clientes (
+    ID INT PRIMARY KEY,
+    Nome VARCHAR(50),
+    Email VARCHAR(100)
+);
+
+SELECT (Consultar Dados):
+
+SELECT * FROM Clientes WHERE ID = 1;
+
+
+Já as cláusulas são partes de uma instrução SQL que especificam condições adicionais ou opções para a execução da instrução. Elas ajudam a refinar a operação desejada e podem ser opcionais dependendo da instrução.
+
+CLAUSULA WHERE (Filtrar Resultados):
+
+SELECT * FROM Clientes WHERE Nome = 'João';
+
+CLAUSULA ORDER BY (Ordenar Resultados):
+
+SELECT * FROM Clientes ORDER BY Nome ASC;
+
+Em resumo, os statements são as operações principais realizadas em um banco de dados, enquanto as cláusulas são usadas para fornecer detalhes adicionais sobre como essas operações devem ser executadas. As cláusulas são usadas dentro de um statement para personalizar o comportamento da operação.

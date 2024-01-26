@@ -1,0 +1,35 @@
+1. Um identificador é um nome dado a um objeto no banco de dados, como tabelas, colunas, índices, visões, procedimentos armazenados e outros. Os identificadores são usados para referenciar esses objetos em consultas e operações no banco de dados.
+
+Exemplos Práticos:
+
+Clientes: Nome de uma tabela.
+Nome: Nome de uma coluna na tabela Clientes.
+idx_nome: Nome de um índice.
+ObterTotalVendas(): Nome de uma função ou procedimento armazenado.
+
+2. Um operador em SQL é um símbolo ou palavra-chave que realiza uma operação entre dois ou mais valores para produzir um resultado. Os operadores podem ser aritméticos, de comparação, lógicos, entre outros.
+
+Exemplos Práticos:
+
+Aritméticos: +, -, *, /.
+Comparação: =, !=, <, >, <=, >=.
+Lógicos: AND, OR, NOT.
+
+3. Uma constante em SQL é um valor fixo que não muda durante a execução de uma instrução. Ela pode ser um valor numérico, uma string, um valor booleano, uma data, entre outros.
+
+Exemplos Práticos:
+
+Valores Numéricos: 123, 3.14.
+Strings: 'João', 'Rua Principal'.
+Valores Booleanos: TRUE, FALSE.
+Datas: '2024-01-30', '10:00:00'.
+
+4. Uma expressão em SQL é uma combinação de identificadores, operadores e constantes que, quando avaliada, resulta em um valor. As expressões são amplamente utilizadas em consultas, cláusulas WHERE, cláusulas ORDER BY, e em muitas outras partes de uma instrução SQL.
+
+Exemplos Práticos:
+
+Operações Aritméticas: Salario * 1.1.
+Comparação: Idade >= 18.
+Funções de Data: YEAR(DataNascimento).
+
+Em resumo, os identificadores são nomes dados a objetos no banco de dados, os operadores realizam operações entre valores, as constantes são valores fixos e as expressões são combinações de identificadores, operadores e constantes que resultam em um valor. Esses termos são fundamentais para entender e construir consultas SQL eficazes.

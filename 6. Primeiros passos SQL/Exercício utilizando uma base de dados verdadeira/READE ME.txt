@@ -1,0 +1,6 @@
+Para esses exercícios utilizaremos a base de dados abaixo:
+
+Link: https://dados.gov.br/dados/conjuntos-dados/dados-abertos-de-inspecao-em-navios-de-cruzeiro
+
+Os exercícios, no primeiro momento serão básicos com o intuito de filtrar e ordenar, ao longo do tipo iremos avançando.
+

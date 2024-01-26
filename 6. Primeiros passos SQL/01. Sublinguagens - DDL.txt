@@ -1,0 +1,33 @@
+DDL: linguagem de definição de dados
+A DDL (Data Definition Language) engloba os comandos de definição do banco de dados. Interagem com os objetos do banco. São eles: 
+
+CREATE: De modo geral, o comando Create cria objetos. Pode ser usado para criar desde novos bancos de dados completamente zerados a tabelas específicas. No exemplo abaixo, estamos criando uma tabela para os dados de estudantes.
+
+CREATE TABLE estudantes;
+
+DROP: O comando Drop exclui objetos do banco de dados. Essa remoção de tabelas envolve todas as linhas, privilégios e índices. Na aplicação, o drop não necessita de nenhuma cláusula adicional.
+
+DROP DATABASE unidade_centro;
+
+ALTER: O ALTER altera objetos já existentes, seja modificando, excluindo ou adicionando. No exemplo a seguir, alteramos a tabela estudantes excluindo a coluna nome. No mesmo caso, vemos também o uso do DROP.
+
+
+ALTER TABLE estudantes
+
+TRUNCATE: Exclui todo o conteúdo de uma tabela e redefine sua identidade para o valor inicial. Essa exclusão envolve também os espaços destinados aos registros. Trata-se de uma operação que não pode ser revertida.
+
+COMMENT: É uma função usada para fazer um comentário explicativo ou impedir a execução de uma linha de SQL pelo sistema. Esse princípio, a possibilidade de fazer comentários, é comum a outras linguagens de programação, representado por diferentes símbolos. 
+
+Existem duas opções de COMMENT no SQL: simbolizado por dois traços ( — ), estando tudo posterior a eles na linha automaticamente anulado na execução do código, ou por meio da utilização de um asterisco e uma barra (/*), que necessita ser aberto antes do início do comentário, e fechado, após o fim deste. O primeiro, de dois traços, é usado para comentários de apenas uma linha. O segundo, o comentário multilinhas, para aqueles com duas ou mais. Vejamos exemplos:
+
+-- atencao para aniversario
+ 
+ 
+/* Dois estudantes comemoram aniversario em data diferente da que foram registrados */
+
+
+RENAME: É um comando bastante simples, sua função é renomear objetos. Na sintaxe, é preciso citar qual objeto sofrerá a alteração e qual será o novo nome.
+
+
+
+RENAME TABLE estudantes TO alunos;

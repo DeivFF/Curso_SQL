@@ -1,0 +1,5 @@
+Utilizar os comandos DDL na prática 
+Utilizar operadores like e between
+Union, intersection e except
+Nested queries (subqueries)
+Exists, unique e comparação com conjuntos explicitos em queries.

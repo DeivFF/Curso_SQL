@@ -1,0 +1,15 @@
+DML: linguagem de manipulação de dados
+
+A DML (Data Manipulation Language) corresponde aos comandos de manipulação dos dados. Composta de apenas três comandos, envolve interações de armazenamento, modificação, exclusão, inserção e atualização.
+
+INSERT: Essa instrução insere dados a uma ou mais tabelas. Na sua estrutura, deve ser acompanhada de INTO. Vejamos um exemplo:
+
+INSERT INTO estudantes (matricula, nome, aniversario) values (1776, Joana, 21 abr. 1987);
+
+UPDATE: Atualiza os dados existentes em uma ou mais tabelas. Deve ser usado com a cláusula WHERE, para que se saiba em que linha será a atualização dos dados. Caso seja utilizado sem o WHERE, atualiza todos os registros. Como exemplo do segundo caso:
+
+UPDATE estudantes;
+
+DELETE: Exclui os registros de uma tabela ou mais. Quando não acompanhado de uma cláusula, todas as linhas são removidas.
+
+DELETE FROM estudantes WHERE matricula = 1776;

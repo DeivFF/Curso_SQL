@@ -1,0 +1,51 @@
+Quando lidamos com conjuntos de dados, é comum encontrarmos variáveis que podem ser organizadas em classes ou categorias. A categorização é o processo de converter uma variável para o tipo categórico, permitindo a criação de novas formas de informação. Por exemplo, podemos converter a variável "idade do cliente" em faixas etárias, facilitando a análise e visualização dos dados. Na prática, isso envolve reorganizar os dados de uma maneira que faça sentido para a análise pretendida.
+
+Suponha que temos uma tabela chamada Pedidos com as seguintes colunas e valores:
+
+ID	Cliente	Valor_total
+1	João	100.00
+2	Maria	150.00
+3	Carlos	80.00
+4	Ana	200.00
+5	Pedro	120.00
+
+Vamos categorizar os pedidos com base no valor total em três faixas: Baixo, Médio e Alto. 
+
+ID	Cliente	Valor_total	Categoria_valor
+1	João	   100.00	    Médio
+2	Maria	   150.00           Alto
+3	Carlos	   80.00	    Baixo
+4	Ana	   200.00	    Alto
+5	Pedro	   120.00	    Médio
+
+
+A codificação é outro processo crucial em ciência de dados, que envolve transformar dados em representações numéricas compreensíveis para algoritmos de aprendizado de máquina e outras análises computacionais. Por exemplo, podemos codificar variáveis categóricas em números inteiros, atribuindo um valor específico para cada categoria. Isso permite que modelos matemáticos compreendam e processem os dados de forma eficaz.
+
+SELECT
+    CASE
+        WHEN estado_cliente = 'SP' THEN 1
+        WHEN estado_cliente = 'RJ' THEN 2
+        ELSE 3
+    END AS cod_estado
+FROM
+    clientes;
+
+One-Hot Encoding é uma técnica que transforma variáveis categóricas em vetores binários, criando novas colunas para cada categoria. Cada coluna representa a presença ou ausência de uma categoria em uma observação. Essa abordagem é particularmente útil quando lidamos com variáveis categóricas que têm mais de duas categorias.
+
+Suponha que temos uma tabela chamada Clientes com as seguintes colunas e valores:
+
+ID	Nome	Cor_preferida
+1	João	Azul
+2	Maria	Vermelho
+3	Carlos	Azul
+4	Ana	Verde
+5	Pedro	Vermelho
+
+Para aplicar o One-Hot Encoding na coluna Cor_preferida, onde temos as categorias Azul, Vermelho e Verde, criaremos três novas colunas binárias: Cor_Azul, Cor_Vermelho e Cor_Verde.
+
+ID	Nome	Cor_Azul	Cor_Vermelho	Cor_Verde
+1	João	1			0	0
+2	Maria	0			1	0
+3	Carlos	1			0	0
+4	Ana	0			0	1
+5	Pedro	0			1	0
