@@ -9,7 +9,7 @@ Isolamento - Se duas transações concorrentes forem executadas simultaneamente,
 Durabilidade - Após uma transação ser realizada, garante que a mesma permanecerá, independente de falha do sistema. Isso garante que a informação permanecerá.
 
 
-Algumas das caracteristicas importante s de um SGBD que serão abordadas mais a frente, são elas:
+Algumas das caracteristicas importantes de um SGBD que serão abordadas mais a frente, são elas:
 
 Relacionamento entre tabelas
 Linguagem de consulta estruturada
