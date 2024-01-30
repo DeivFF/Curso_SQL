@@ -82,7 +82,7 @@ FROM CAP_02.dbo.TB_BREAST
 -- Agora, nossa intenção é criar  uma nova tabela com as informações anteriores, para isso, realizamos a query abaixo.
 SELECT CASE	
 			WHEN classe='no-recurrence-events' THEN 0
-			WHEN classe='no-recurrence-events' THEN 1
+			WHEN classe='recurrence-events' THEN 1
 		END as classe,
 		idade, menopausa,
 		CASE	
@@ -128,7 +128,7 @@ SELECT * FROM TB_BREAST02
 SELECT CASE	
 			WHEN menopausa='premeno'  THEN 1
 			WHEN menopausa='ge40'  THEN 2
-			WHEN menopausa='it40' THEN 3
+			WHEN menopausa='lt40' THEN 3
 		END as menopausa
 FROM TB_BREAST02
 
@@ -162,7 +162,7 @@ SELECT
 	CASE	
 		WHEN menopausa='premeno'  THEN 1
 		WHEN menopausa='ge40'  THEN 2
-		WHEN menopausa='it40' THEN 3
+		WHEN menopausa='lt40' THEN 3
 	END as menopausa,
 	tamanho_tumor, 
 	inv_nodes + '-' + CONVERT(VARCHAR(10),quadrante) as posicao_tumor,
