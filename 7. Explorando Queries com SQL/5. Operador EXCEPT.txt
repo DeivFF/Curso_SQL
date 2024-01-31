@@ -1,0 +1,43 @@
+O operador EXCEPT é usado para combinar os resultados de duas consultas SQL e retornar apenas os registros que são exclusivos da primeira consulta e não estão presentes na segunda consulta. Em outras palavras, ele retorna os registros da primeira consulta que não estão presentes nos resultados da segunda consulta. Aqui está uma explicação detalhada:
+
+Funcionamento:
+
+O operador EXCEPT é usado para encontrar a diferença entre os resultados de duas consultas SQL.
+Ele retorna os registros da primeira consulta que não estão presentes na segunda consulta.
+As consultas envolvidas devem selecionar as mesmas colunas e as colunas devem ser do mesmo tipo ou tipo compatível.
+
+Sintaxe Básica:
+
+SELECT colunas
+FROM tabela1
+EXCEPT
+SELECT colunas
+FROM tabela2;
+
+Exemplo:
+
+Suponha que temos duas tabelas, clientes e clientes_vip, e queremos encontrar os clientes que não são VIPs:
+
+SELECT cliente_id, nome
+FROM clientes
+EXCEPT
+SELECT cliente_id, nome
+FROM clientes_vip;
+
+Este exemplo retornará os IDs e nomes dos clientes que não são VIPs, ou seja, apenas os clientes que estão presentes na tabela de clientes, mas não estão presentes na tabela de clientes VIP.
+
+Observações Importantes:
+
+O EXCEPT retorna apenas os registros que são exclusivos da primeira consulta, ou seja, não estão presentes na segunda consulta.
+As consultas envolvidas devem selecionar as mesmas colunas na mesma ordem para evitar erros ou resultados inesperados.
+Se as consultas retornarem registros duplicados, o EXCEPT removerá automaticamente as duplicatas do resultado final.
+
+Usos Avançados:
+
+O EXCEPT pode ser combinado com outras cláusulas SQL, como ORDER BY, WHERE, GROUP BY, entre outras, para criar consultas mais complexas.
+Pode ser usado para encontrar a diferença entre mais de duas consultas, adicionando mais cláusulas EXCEPT conforme necessário.
+
+Considerações de Desempenho:
+
+Assim como outros operadores de conjunto, o EXCEPT pode impactar o desempenho da consulta, especialmente em grandes conjuntos de dados. Avalie a necessidade do uso do EXCEPT e considere outras abordagens se possível.
+O operador EXCEPT é útil para encontrar registros exclusivos da primeira consulta em relação à segunda consulta, oferecendo uma maneira eficaz de realizar operações de diferença em conjuntos de dados.

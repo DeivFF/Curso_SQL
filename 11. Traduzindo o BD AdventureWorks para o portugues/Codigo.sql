@@ -1,6 +1,6 @@
 CREATE DATABASE AdventureWorksPT
 
-EXEC ('CREATE SCHEMA Person')
+EXEC ('CREATE SCHEMA Pessoa')
 
 SELECT AddressTypeID as IDTipoEndereco, 
 		CASE Name
@@ -14,7 +14,7 @@ SELECT AddressTypeID as IDTipoEndereco,
 INTO AdventureWorksPT.dbo.TipoEndereco
 FROM Person.AddressType
 
-ALTER SCHEMA Person TRANSFER TipoEndereco
+ALTER SCHEMA Pessoa TRANSFER TipoEndereco
 
 SELECT * FROM Person.BusinessEntity
 
@@ -23,7 +23,7 @@ SELECT BusinessEntityID as IDEntidadeNegocio,
 INTO AdventureWorksPT.dbo.EntidadeNegocio
 FROM Person.BusinessEntity
 
-ALTER SCHEMA Person TRANSFER EntidadeNegocio
+ALTER SCHEMA Pessoa TRANSFER EntidadeNegocio
 
 SELECT BusinessEntityID AS IDEntidadeNegocio,
 	AddressID AS IDEndereco,
@@ -32,7 +32,7 @@ SELECT BusinessEntityID AS IDEntidadeNegocio,
 INTO AdventureWorksPT.dbo.EnderecoEntidadeNegocio
 FROM Person.BusinessEntityAddress
 
-ALTER SCHEMA Person TRANSFER EnderecoEntidadeNegocio
+ALTER SCHEMA Pessoa TRANSFER EnderecoEntidadeNegocio
 
 SELECT BusinessEntityID as IDEntidadeNegocio,
 	   PersonID as IDPessoa,
@@ -41,7 +41,7 @@ SELECT BusinessEntityID as IDEntidadeNegocio,
 INTO AdventureWorksPT.dbo.ContatoEntidadeNegocio
 FROM Person.BusinessEntityContact
 
-ALTER SCHEMA Person TRANSFER ContatoEntidadeNegocio
+ALTER SCHEMA Pessoa TRANSFER ContatoEntidadeNegocio
 
 SELECT StateProvinceID AS IDEstadoProvincia,
     StateProvinceCode AS CodigoEstadoProvincia,
@@ -503,7 +503,7 @@ SELECT
            WHEN 'Associated Bikes' THEN 'Bicicletas Associadas'
            WHEN 'Atypical Bike Company' THEN 'Empresa de Bicicletas Atípica'
            WHEN 'Authentic Sales and Service' THEN 'Vendas e Serviços Autênticos'
-	   WHEN 'Authorized Bike Sales and Rental' THEN 'Vendas e Locação Autorizadas de Bicicletas'
+	       WHEN 'Authorized Bike Sales and Rental' THEN 'Vendas e Locação Autorizadas de Bicicletas'
            WHEN 'Basic Bike Company' THEN 'Empresa Básica de Bicicletas'
            WHEN 'Basic Sports Equipment' THEN 'Equipamentos Esportivos Básicos'
            WHEN 'Beneficial Exercises and Activities' THEN 'Exercícios e Atividades Beneficiais'
@@ -537,7 +537,7 @@ SELECT
            WHEN 'Bold Bike Accessories' THEN 'Acessórios de Bicicleta Ousados'
            WHEN 'Brakes and Gears' THEN 'Freios e Engrenagens'
            WHEN 'Brand New Bikes' THEN 'Bicicletas Novas'
-	   WHEN 'Brightwork Company' THEN 'Empresa de Trabalhos Brilhantes'
+		   WHEN 'Brightwork Company' THEN 'Empresa de Trabalhos Brilhantes'
            WHEN 'Brown Bicycle Company' THEN 'Empresa de Bicicletas Marrons'
            WHEN 'Budget Bike Company' THEN 'Empresa de Bicicletas Econômicas'
            WHEN 'Budget Toy Store' THEN 'Loja de Brinquedos Econômicos'
@@ -1077,7 +1077,7 @@ SELECT
            WHEN 'The Bike Mechanics' THEN 'Os Mecânicos de Bicicletas'
            WHEN 'The Bike Outlet' THEN 'O Outlet de Bicicletas'
            WHEN 'The Bike Shop' THEN 'A Loja de Bicicletas'
-		    WHEN 'The Commissary' THEN 'O Comissariado'
+		   WHEN 'The Commissary' THEN 'O Comissariado'
            WHEN 'The Cycle Store' THEN 'A Loja de Ciclos'
            WHEN 'The Gear Store' THEN 'A Loja de Equipamentos'
            WHEN 'The New Bike Store' THEN 'A Nova Loja de Bicicletas'
@@ -2041,9 +2041,7 @@ FROM Purchasing.Vendor;
 
 ALTER SCHEMA Compras TRANSFER Fornecedor
 
-SELECT * FROM Purchasing.Vendor
-
-SELECT * FROM Person.AddressType
+-- AGORA VAMOS CRIAR OS RELACIONAMENTOS.
 
 ALTER TABLE RecursosHumanos.HistoricoDepartamentoFuncionario
 ADD CONSTRAINT PK_HistoricoDepartamentoFuncionario_IDEntidadeNegocio_DataInicio_IDDepartamento PRIMARY KEY (IDEntidadeNegocio,DataInicio,IDDepartamento)

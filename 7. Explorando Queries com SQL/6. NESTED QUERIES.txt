@@ -1,0 +1,28 @@
+As "Nested Queries" (consultas aninhadas) são consultas SQL que estão incorporadas dentro de outras consultas SQL, ou seja, uma consulta é utilizada como parte da condição ou cláusula de outra consulta. Essas consultas aninhadas permitem realizar consultas mais complexas e avançadas ao manipular dados em bancos de dados relacionais.
+
+Funcionamento:
+
+Uma consulta aninhada é executada internamente pela primeira consulta que a contém.
+A saída da consulta aninhada é usada como entrada para a consulta externa, permitindo realizar operações ou filtrar resultados com base nos resultados da consulta interna.
+As consultas aninhadas podem ser usadas em várias partes de uma consulta SQL, incluindo as cláusulas SELECT, FROM, WHERE, HAVING, entre outras.
+
+Exemplo:
+
+Suponha que tenhamos duas tabelas, clientes e pedidos, e queremos encontrar os clientes que fizeram pelo menos um pedido:
+
+SELECT nome
+FROM clientes
+WHERE cliente_id IN (SELECT cliente_id FROM pedidos);
+
+Neste exemplo, a consulta aninhada (SELECT cliente_id FROM pedidos) é executada primeiro para obter todos os cliente_id que estão presentes na tabela de pedidos. Em seguida, a consulta externa seleciona os nomes dos clientes cujo cliente_id está presente nos resultados da consulta interna.
+
+Observações Importantes:
+
+As consultas aninhadas podem ser úteis para realizar operações complexas, como filtrar resultados com base em subconjuntos de dados ou realizar cálculos que dependem de resultados de outras consultas.
+É importante otimizar consultas aninhadas para garantir um desempenho eficiente, especialmente em bancos de dados grandes.
+
+Usos Avançados:
+
+Consultas aninhadas podem ser aninhadas dentro de outras consultas aninhadas, permitindo realizar operações ainda mais complexas e avançadas.
+Elas são comumente usadas em combinação com funções de agregação, como SUM, COUNT, AVG, entre outras, para calcular valores com base em subconjuntos de dados.
+As consultas aninhadas são uma ferramenta poderosa para realizar operações complexas e avançadas em bancos de dados relacionais, permitindo manipular dados de maneira flexível e eficaz.

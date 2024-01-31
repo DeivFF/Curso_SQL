@@ -1,6 +1,0 @@
-Utilizar operadores like e between
-Union, intersection e except
-Nested queries (subqueries)
-Exists, unique e comparação com conjuntos explicitos em queries.
-
-o que é uma query interna e nested query

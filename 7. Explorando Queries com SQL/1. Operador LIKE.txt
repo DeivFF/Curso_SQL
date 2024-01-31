@@ -35,7 +35,4 @@ FROM nome_tabela
 
 WHERE coluna LIKE "EXPRESSÃO"
 
-
-O comando NOT LIKE é utilizado de maneira oposta ao LIKE. Agora que você já aprendeu como o LIKE funciona, a explicação para este novo comando se torna simples.
-
-O NOT LIKE é utilizado quando se deseja como resultado os dados que não possuem determinados caracteres.
+O comando NOT LIKE é utilizado de maneira oposta ao LIKE, ou seja, quando se deseja como resultado os dados que não possuem determinados caracteres.

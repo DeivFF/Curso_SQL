@@ -1,0 +1,49 @@
+O operador UNION no SQL é usado para combinar os resultados de duas ou mais consultas em uma única lista de
+resultados. Aqui está uma explicação sobre esse operador:
+
+Funcionamento:
+
+O UNION é usado para combinar os resultados de duas ou mais consultas SQL que têm a mesma estrutura de coluna.
+Ele remove automaticamente quaisquer duplicatas do resultado final, garantindo que cada registro retornado
+seja único.
+As consultas envolvidas no UNION devem selecionar as mesmas colunas e as colunas devem ser do mesmo tipo ou
+tipo compatível.
+As consultas são executadas independentemente uma da outra e, em seguida, os resultados são combinados em uma
+única lista.
+
+Sintaxe Básica:
+
+SELECT colunas
+FROM tabela1
+UNION
+SELECT colunas
+FROM tabela2;
+
+Exemplo:
+
+SELECT nome FROM clientes
+UNION
+SELECT nome FROM fornecedores;
+
+Este exemplo retornará uma lista de todos os nomes únicos de clientes e fornecedores.
+
+Observações Importantes:
+
+O UNION seleciona apenas registros únicos. Para manter duplicatas, utilize o operador UNION ALL.
+
+As consultas envolvidas no UNION devem selecionar as mesmas colunas na mesma ordem. Qualquer diferença nas
+colunas ou tipos de dados pode resultar em erros ou resultados inesperados.
+
+Usos Avançados:
+
+O UNION pode ser combinado com outras cláusulas SQL, como ORDER BY, WHERE, GROUP BY, entre outras, para criar
+consultas mais complexas.
+Pode ser usado para combinar resultados de consultas em várias tabelas ou subconsultas.
+
+Considerações de Desempenho:
+
+O uso excessivo de UNION pode impactar o desempenho da consulta, especialmente em grandes conjuntos de dados.
+Certifique-se de que o uso do UNION seja realmente necessário e considere outras abordagens se possível.
+
+O operador UNION é uma ferramenta útil para combinar resultados de consultas de várias fontes em uma única
+lista, garantindo que os resultados sejam únicos e compatíveis em termos de estrutura de coluna.
