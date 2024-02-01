@@ -1,0 +1,149 @@
+TABELA Producao.Produto
+
+IDProduto: Número de identificação único do produto.
+FlagFabricacaoPropria: 0 = Produto é adquirido, 1 = Produto é fabricado internamente.
+FlagProdutoAcabado: 0 = Produto não é um item vendável. 1 = Produto é vendável.
+Cor: Cor do produto.
+NivelEstoqueSeguranca: Quantidade mínima de estoque.
+PontoReposicao: Nível de estoque que aciona um pedido de compra ou ordem de trabalho.
+CustoPadrao: Custo padrão do produto.
+PrecoLista: Preço de venda.
+Tamanho: Tamanho do produto.
+CodigoUnidadeMedidaTamanho: Unidade de medida para o tamanho.
+CodigoUnidadeMedidaPeso: Unidade de medida para o peso.
+Peso: Peso do produto.
+DiasFabricacao: Número de dias necessários para fabricar o produto.
+LinhaProduto: R = Estrada, M = Montanha, T = Turismo, S = Padrão.
+Classe: H = Alta, M = Média, L = Baixa.
+Estilo: W = Feminino, M = Masculino, U = Universal.
+IDSubcategoriaProduto: Produto é membro desta subcategoria de produto. Chave estrangeira para ProductSubCategory.ProductSubCategoryID.
+IDModeloProduto: Produto é membro deste modelo de produto. Chave estrangeira para ProductModel.ProductModelID.
+DataInicioVenda: Data em que o produto estava disponível para venda.
+DataFimVenda: Data em que o produto deixou de estar disponível para venda.
+DataDescontinuacao: Data em que o produto foi descontinuado.
+
+
+
+
+TABELA Producao.Documento
+
+NoDocumento: Chave primária para registros de documentos.
+NivelDocumento: Profundidade na hierarquia do documento.
+Titulo: Título do documento.
+Proprietario: Funcionário que controla o documento. Chave estrangeira para Employee.BusinessEntityID.
+FlagPasta: 0 = Esta é uma pasta, 1 = Este é um documento.
+NomeArquivo: Nome do arquivo do documento.
+ExtensaoArquivo: Extensão do arquivo indicando o tipo de documento. Por exemplo, .doc ou .txt.
+Revisao: Número de revisão do documento.
+NumeroAlteracao: Número de aprovação de alteração de engenharia.
+Status: 1 = Aguardando aprovação, 2 = Aprovado, 3 = Obsoleto.
+Documento: Documento completo.
+
+
+
+
+TABELA Producao.Ilustracao
+
+IDIlustracao: Chave primária para registros de ilustrações.
+Diagrama: Ilustrações usadas em instruções de fabricação. Armazenado como XML.
+
+
+
+
+TABELA Producao.CategoriaProduto
+
+IDCategoriaProduto: Chave primária para registros de categorias de produto.
+Nome: Descrição da categoria. -- Bicleta, Componentes, Vestuário, Acessório.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA Producao.DescricaoProduto
+
+IDDescricaoProduto: Chave primária para registros de descrições de produtos.
+Descrição: Descrição do produto.
+DataModificação: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA Producao.ModeloProduto
+
+IDModeloProduto: Chave primária para registros de modelos de produto.
+Nome: Descrição do modelo de produto.
+DataModificação: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA Producao.ModeloDescricaoProdutoCultural
+
+IDModeloProduto: Chave primária. Chave estrangeira para ProductModel.ProductModelID.
+IDDescricaoProduto: Chave primária. Chave estrangeira para ProductDescription.ProductDescriptionID.
+IDCultura: Número de identificação da cultura. Chave estrangeira para Culture.CultureID.
+DataModificação: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA Producao.FotoProduto
+
+IDFotoProduto: Chave primária para registros de fotos de produtos.
+FotoMiniatura: Pequena imagem do produto.
+NomeArquivoFotoMiniatura: Nome do arquivo da imagem miniatura.
+FotoGrande: Imagem grande do produto.
+NomeArquivoFotoGrande: Nome do arquivo da imagem grande.
+DataModificação: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA Producao.FotoProduto
+
+IDProduto: Número de identificação do produto. Chave estrangeira para Product.ProductID.
+IDFotoProduto: Número de identificação da foto do produto. Chave estrangeira para ProductPhoto.ProductPhotoID.
+Principal: 0 = A foto não é a imagem principal. 1 = A foto é a imagem principal.
+DataModificação: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA Producao.FotoPrincipalProduto
+
+IDProduto: Número de identificação do produto. Chave estrangeira para Product.ProductID.
+IDFotoProduto: Número de identificação da foto do produto. Chave estrangeira para ProductPhoto.ProductPhotoID.
+Principal: 0 = A foto não é a imagem principal. 1 = A foto é a imagem principal.
+DataModificação: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA Producao.RevisaoProduto
+
+IDRevisaoProduto: Chave primária para registros de revisões de produtos.
+IDProduto: Número de identificação do produto. Chave estrangeira para Product.ProductID.
+NomeRevisor: Nome do revisor.
+DataRevisao: Data em que a revisão foi submetida.
+EnderecoEmail: Endereço de e-mail do revisor.
+Classificacao: Classificação do produto dada pelo revisor. A escala vai de 1 a 5, com 5 sendo a classificação mais alta.
+Comentarios: Comentários do revisor.
+
+
+
+
+TABELA Producao.SubcategoriaProduto
+
+IDSubcategoriaProduto: Chave primária para registros de subcategorias de produtos.
+IDCategoriaProduto: Número de identificação da categoria de produto. Chave estrangeira para ProductCategory.ProductCategoryID.
+Nome: Descrição da subcategoria.
+DataModificação: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA Producao.CodigoUnidadeMedida
+
+CodigoUnidadeMedida: Código de unidade de medida. Chave primária.
+Nome: Descrição da unidade de medida.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.

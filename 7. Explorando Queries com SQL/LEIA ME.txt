@@ -1,0 +1,1 @@
+As análises são realizadas com base no banco de dados AdventureWorksPT disponível na pasta 11.
