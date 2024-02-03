@@ -1,6 +1,6 @@
 TABELA Producao.Produto
 
-IDProduto: Número de identificação único do produto.
+IDProduto: Chave Primária
 FlagFabricacaoPropria: 0 = Produto é adquirido, 1 = Produto é fabricado internamente.
 FlagProdutoAcabado: 0 = Produto não é um item vendável. 1 = Produto é vendável.
 Cor: Cor do produto.
@@ -27,7 +27,7 @@ DataDescontinuacao: Data em que o produto foi descontinuado.
 
 TABELA Producao.Documento
 
-NoDocumento: Chave primária para registros de documentos.
+NoDocumento: Chave primária
 NivelDocumento: Profundidade na hierarquia do documento.
 Titulo: Título do documento.
 Proprietario: Funcionário que controla o documento. Chave estrangeira para Employee.BusinessEntityID.
@@ -44,7 +44,7 @@ Documento: Documento completo.
 
 TABELA Producao.Ilustracao
 
-IDIlustracao: Chave primária para registros de ilustrações.
+IDIlustracao: Chave primária
 Diagrama: Ilustrações usadas em instruções de fabricação. Armazenado como XML.
 
 
@@ -52,7 +52,7 @@ Diagrama: Ilustrações usadas em instruções de fabricação. Armazenado como 
 
 TABELA Producao.CategoriaProduto
 
-IDCategoriaProduto: Chave primária para registros de categorias de produto.
+IDCategoriaProduto: Chave primária.
 Nome: Descrição da categoria. -- Bicleta, Componentes, Vestuário, Acessório.
 DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
 
@@ -61,7 +61,7 @@ DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
 
 TABELA Producao.DescricaoProduto
 
-IDDescricaoProduto: Chave primária para registros de descrições de produtos.
+IDDescricaoProduto: Chave primária
 Descrição: Descrição do produto.
 DataModificação: Data e hora em que o registro foi atualizado pela última vez.
 
@@ -70,7 +70,7 @@ DataModificação: Data e hora em que o registro foi atualizado pela última vez
 
 TABELA Producao.ModeloProduto
 
-IDModeloProduto: Chave primária para registros de modelos de produto.
+IDModeloProduto: Chave primária
 Nome: Descrição do modelo de produto.
 DataModificação: Data e hora em que o registro foi atualizado pela última vez.
 
@@ -79,7 +79,7 @@ DataModificação: Data e hora em que o registro foi atualizado pela última vez
 
 TABELA Producao.ModeloDescricaoProdutoCultural
 
-IDModeloProduto: Chave primária. Chave estrangeira para ProductModel.ProductModelID.
+IDModeloProduto: Chave primária
 IDDescricaoProduto: Chave primária. Chave estrangeira para ProductDescription.ProductDescriptionID.
 IDCultura: Número de identificação da cultura. Chave estrangeira para Culture.CultureID.
 DataModificação: Data e hora em que o registro foi atualizado pela última vez.
@@ -89,7 +89,7 @@ DataModificação: Data e hora em que o registro foi atualizado pela última vez
 
 TABELA Producao.FotoProduto
 
-IDFotoProduto: Chave primária para registros de fotos de produtos.
+IDFotoProduto: Chave primária
 FotoMiniatura: Pequena imagem do produto.
 NomeArquivoFotoMiniatura: Nome do arquivo da imagem miniatura.
 FotoGrande: Imagem grande do produto.
@@ -97,21 +97,9 @@ NomeArquivoFotoGrande: Nome do arquivo da imagem grande.
 DataModificação: Data e hora em que o registro foi atualizado pela última vez.
 
 
-
-
-TABELA Producao.FotoProduto
-
-IDProduto: Número de identificação do produto. Chave estrangeira para Product.ProductID.
-IDFotoProduto: Número de identificação da foto do produto. Chave estrangeira para ProductPhoto.ProductPhotoID.
-Principal: 0 = A foto não é a imagem principal. 1 = A foto é a imagem principal.
-DataModificação: Data e hora em que o registro foi atualizado pela última vez.
-
-
-
-
 TABELA Producao.FotoPrincipalProduto
 
-IDProduto: Número de identificação do produto. Chave estrangeira para Product.ProductID.
+IDProduto: Número de identificação do produto. Chave estrangeira
 IDFotoProduto: Número de identificação da foto do produto. Chave estrangeira para ProductPhoto.ProductPhotoID.
 Principal: 0 = A foto não é a imagem principal. 1 = A foto é a imagem principal.
 DataModificação: Data e hora em que o registro foi atualizado pela última vez.
@@ -122,7 +110,7 @@ DataModificação: Data e hora em que o registro foi atualizado pela última vez
 TABELA Producao.RevisaoProduto
 
 IDRevisaoProduto: Chave primária para registros de revisões de produtos.
-IDProduto: Número de identificação do produto. Chave estrangeira para Product.ProductID.
+IDProduto: Número de identificação do produto. Chave estrangeira
 NomeRevisor: Nome do revisor.
 DataRevisao: Data em que a revisão foi submetida.
 EnderecoEmail: Endereço de e-mail do revisor.
@@ -134,8 +122,8 @@ Comentarios: Comentários do revisor.
 
 TABELA Producao.SubcategoriaProduto
 
-IDSubcategoriaProduto: Chave primária para registros de subcategorias de produtos.
-IDCategoriaProduto: Número de identificação da categoria de produto. Chave estrangeira para ProductCategory.ProductCategoryID.
+IDSubcategoriaProduto: Chave primária
+IDCategoriaProduto: Número de identificação da categoria de produto. Chave estrangeira
 Nome: Descrição da subcategoria.
 DataModificação: Data e hora em que o registro foi atualizado pela última vez.
 
@@ -146,4 +134,164 @@ TABELA Producao.CodigoUnidadeMedida
 
 CodigoUnidadeMedida: Código de unidade de medida. Chave primária.
 Nome: Descrição da unidade de medida.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+TABELA ListaMateriais
+
+IDListaMateriais: Chave primária para registros de lista de materiais.
+IDProdutoMontagem: Número de identificação do produto pai. Chave estrangeira para Product.ProductID.
+IDComponente: Número de identificação do componente. Chave estrangeira para Product.ProductID.
+DataInicio: Data em que o componente começou a ser usado no item de montagem.
+DataFim: Data em que o componente parou de ser usado no item de montagem.
+CodigoUnidadeMedida: Código padrão que identifica a unidade de medida para a quantidade.
+NivelListaMateriais: Indica a profundidade do componente em relação ao seu pai (IDMontagem).
+QuantidadePorMontagem: Quantidade do componente necessária para criar a montagem.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA Cultura
+
+IDCultura: Chave primária
+Nome: Descrição da cultura.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA LOCALIZACAO
+
+IDLocalizacao: Chave primária.
+Nome: Descrição da localização.
+TaxaCusto: Custo padrão por hora da localização de fabricação.
+Disponibilidade: Capacidade de trabalho (em horas) da localização de fabricação.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA CUSTO PRODUTO
+
+IDProduto: Chave estrangeira.
+DataInicio: Data de início do custo do produto.
+DataFim: Data de término do custo do produto.
+CustoPadrao: Custo padrão do produto.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA DocumentoProduto
+
+IDProduto: Chave estrangeira.
+NoDocumento: Número de identificação do documento. Chave estrangeira para Document.DocumentNode.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA LocalizacaoProduto
+
+IDProduto: Chave estrangeira.
+IDLocalizacao: Número de identificação da localização do inventário. Chave estrangeira.
+Prateleira: Compartimento de armazenamento dentro de uma localização de inventário.
+Caixa: Contêiner de armazenamento em uma prateleira em uma localização de inventário.
+Quantidade: Quantidade de produtos na localização do inventário.
+GUIDRegistro: Número ROWGUIDCOL que identifica exclusivamente o registro. Usado para suportar um exemplo de replicação de mesclagem.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA PrecoListaProduto
+
+IDProduto: Chave estrangeira
+DataInicio: Data de início do preço de lista.
+DataFim: Data de término do preço de lista.
+PrecoLista: Preço de lista do produto.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA ModeloProdutoIlustracao
+
+IDModeloProduto: Chave primária e Chave estrangeira.
+IDIlustracao: Chave primária. Chave estrangeira para Illustration.IllustrationID.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA MotivoSucata
+
+
+IDMotivoSucata: Chave primária
+Nome: Descrição da falha.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA HistoricoTransacao
+
+IDTransacao: Chave primária
+IDProduto: Número de identificação do produto. Chave estrangeira para Product.ProductID.
+IDPedidoReferencia: Número de identificação do pedido de compra, pedido de venda ou ordem de trabalho de referência.
+IDLinhaPedidoReferencia: Número da linha associada ao pedido de compra, pedido de venda ou ordem de trabalho de referência.
+DataTransacao: Data e hora da transação.
+TipoTransacao: Tipo de transação (W = Ordem de Trabalho, S = Pedido de Venda, P = Pedido de Compra).
+Quantidade: Quantidade do produto.
+CustoReal: Custo real do produto.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA HistoricoTransacaoArquivo
+
+IDTransacao: Chave primária
+IDProduto: Chave estrangeira 
+IDPedidoReferencia: Número de identificação do pedido de compra, pedido de venda ou ordem de trabalho de referência.
+IDLinhaPedidoReferencia: Número da linha associada ao pedido de compra, pedido de venda ou ordem de trabalho de referência.
+DataTransacao: Data e hora da transação.
+TipoTransacao: Tipo de transação (W = Ordem de Trabalho, S = Pedido de Venda, P = Pedido de Compra).
+Quantidade: Quantidade do produto.
+CustoReal: Custo real do produto.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA OrdemTrabalho
+
+IDOrdemTrabalho: Chave primária
+IDProduto: Chave estrangeira 
+QuantidadePedido: Quantidade de produto a ser construída.
+QuantidadeEstocada: Quantidade construída e colocada no estoque.
+QuantidadeDescartada: Quantidade que falhou na inspeção.
+DataInicio: Data de início da ordem de trabalho.
+DataFim: Data de término da ordem de trabalho.
+DataLimite: Data de vencimento da ordem de trabalho.
+IDMotivoDescarte: Motivo da falha na inspeção.
+DataModificacao: Data e hora em que o registro foi atualizado pela última vez.
+
+
+
+
+TABELA OrdemProducaoOperacao
+
+IDOrdemProducao: Chave primária. 
+IDProduto: Chave primária. 
+SequenciaOperacao: Chave primária. 
+IDLocalizacao: Chave estrangeira
+DataInicioPlanejada: Data de início de fabricação planejada.
+DataFimPlanejada: Data de término de fabricação planejada.
+DataInicioReal: Data de início real de fabricação.
+DataFimReal: Data de término real de fabricação.
+HorasRecursosReais: Número de horas de fabricação utilizadas.
+CustoPlanejado: Custo de fabricação estimado.
+CustoReal: Custo de fabricação real.
 DataModificacao: Data e hora em que o registro foi atualizado pela última vez.

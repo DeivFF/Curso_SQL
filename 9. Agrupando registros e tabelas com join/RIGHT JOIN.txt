@@ -1,0 +1,54 @@
+A cláusula RIGHT JOIN é uma parte da linguagem SQL (Structured Query Language) usada para combinar registros de duas tabelas em um banco de dados. Ela retorna todos os registros da tabela à direita (a segunda tabela mencionada na consulta) e os registros correspondentes da tabela à esquerda (a primeira tabela mencionada na consulta), se houver correspondência. Se não houver correspondência, o conjunto de resultados conterá registros NULL para as colunas da tabela à esquerda.
+
+Aqui está uma explicação mais detalhada:
+
+Tabela à esquerda (primeira tabela mencionada): É a tabela da qual você quer todos os registros incluídos no resultado final, mesmo que não haja correspondência na segunda tabela.
+
+Tabela à direita (segunda tabela mencionada): É a tabela da qual você quer apenas os registros que correspondem aos registros da primeira tabela. Se não houver correspondência, o registro será incluído na consulta, mas as colunas da tabela à esquerda serão NULL.
+
+Correspondência de registros: Os registros são combinados com base em uma condição de junção especificada na cláusula ON. Essa condição geralmente envolve uma ou mais colunas das tabelas sendo comparadas.
+
+SELECT colunas
+FROM tabela_esquerda
+RIGHT JOIN tabela_direita ON tabela_esquerda.coluna = tabela_direita.coluna;
+
+Vamos considerar um exemplo onde temos uma tabela de funcionários e uma tabela de departamentos, onde nem todos os funcionários estão atribuídos a um departamento, mas queremos listar todos os departamentos, mesmo que não tenham funcionários atribuídos a eles.
+
+TABELA FUNCIONÁRIO
+
+| id | nome    | departamento_id |
+|----|---------|-----------------|
+| 1  | João    | 1               |
+| 2  | Maria   | 2               |
+| 3  | Pedro   | NULL            |
+| 4  | Ana     | 1               |
+
+
+TABELA DEPARTAMENTO
+
+| id | nome        |
+|----|-------------|
+| 1  | Vendas      |
+| 2  | Marketing   |
+| 3  | Financeiro  |
+
+Agora, queremos listar todos os departamentos, incluindo aqueles que não têm funcionários atribuídos a eles. Podemos usar um RIGHT JOIN para isso:
+
+SELECT Departamentos.*, Funcionários.*
+FROM Departamentos
+RIGHT JOIN Funcionários ON Departamentos.id = Funcionários.departamento_id;
+
+Resultado do RIGHT JOIN:
+
+| id | nome        | id | nome  | departamento_id |
+|----|-------------|----|-------|-----------------|
+| 1  | Vendas      | 1  | João  | 1               |
+| 1  | Vendas      | 4  | Ana   | 1               |
+| 2  | Marketing   | 2  | Maria | 2               |
+| 3  | Financeiro  | 3  | NULL  | NULL            |
+
+
+
+
+
+
