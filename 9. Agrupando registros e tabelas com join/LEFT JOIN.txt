@@ -1,18 +1,27 @@
- ---- LEFT JOIN ----
-
-A cláusula LEFT JOIN é uma das operações de junção mais comuns em SQL. Ela é usada para combinar linhas de duas ou mais tabelas com base em uma condição de junção, e garante que todas as linhas da tabela à esquerda da junção sejam incluídas no resultado, mesmo que não haja correspondência na tabela à direita.
+A cláusula LEFT JOIN é uma das operações de junção mais comuns em SQL. Ela é usada para combinar linhas de
+duas ou mais tabelas com base em uma condição de junção, e garante que todas as linhas da tabela à esquerda da
+junção sejam incluídas no resultado, mesmo que não haja correspondência na tabela à direita.
 
 Vamos dividir isso em partes:
 
-Junção de Tabelas: A junção de tabelas é uma operação que combina linhas de duas ou mais tabelas com base em uma condição especificada. Na cláusula LEFT JOIN, você especifica a tabela da esquerda (a primeira mencionada na consulta) e a tabela da direita (a segunda mencionada) da junção.
+Junção de Tabelas: A junção de tabelas é uma operação que combina linhas de duas ou mais tabelas com base em
+uma condição especificada. Na cláusula LEFT JOIN, você especifica a tabela da esquerda (a primeira mencionada
+na consulta) e a tabela da direita (a segunda mencionada) da junção.
 
-Condição de Junção: A condição de junção é especificada na cláusula ON. Esta condição determina como as linhas das duas tabelas serão combinadas. Geralmente, você especifica uma igualdade entre as colunas das tabelas que deseja relacionar.
+Condição de Junção: A condição de junção é especificada na cláusula ON. Esta condição determina como as linhas
+das duas tabelas serão combinadas. Geralmente, você especifica uma igualdade entre as colunas das tabelas que
+deseja relacionar.
 
-Tabela à Esquerda: A tabela à esquerda é a primeira tabela mencionada na consulta. Todas as linhas desta tabela serão incluídas no resultado, mesmo que não haja correspondência na tabela à direita.
+Tabela à Esquerda: A tabela à esquerda é a primeira tabela mencionada na consulta. Todas as linhas desta
+tabela serão incluídas no resultado, mesmo que não haja correspondência na tabela à direita.
 
-Tabela à Direita: A tabela à direita é a segunda tabela mencionada na consulta. As linhas desta tabela são combinadas com as linhas correspondentes da tabela à esquerda com base na condição de junção. Se não houver uma correspondência para uma linha da tabela à esquerda, a linha da tabela à direita será incluída no resultado com valores NULL nas colunas correspondentes.
+Tabela à Direita: A tabela à direita é a segunda tabela mencionada na consulta. As linhas desta tabela são
+combinadas com as linhas correspondentes da tabela à esquerda com base na condição de junção. Se não houver
+uma correspondência para uma linha da tabela à esquerda, a linha da tabela à direita será incluída no
+resultado com valores NULL nas colunas correspondentes.
 
-Em resumo, a cláusula LEFT JOIN retorna todas as linhas da tabela à esquerda, e as linhas correspondentes ou valores NULL da tabela à direita.
+Em resumo, a cláusula LEFT JOIN retorna todas as linhas da tabela à esquerda, e as linhas correspondentes ou
+valores NULL da tabela à direita.
 
 SINTAXE
 
@@ -43,7 +52,8 @@ TABELA MATRÍCULA
 | 3  | 2          | Inglês        |
 |----|------------|---------------|
 
-Podemos usar um LEFT JOIN para obter uma lista de todos os alunos e, se eles estiverem matriculados ou não em algum curso, também listar os cursos. 
+Podemos usar um LEFT JOIN para obter uma lista de todos os alunos e, se eles estiverem matriculados ou não em
+algum curso, também listar os cursos. 
 
 CONSULA:
 

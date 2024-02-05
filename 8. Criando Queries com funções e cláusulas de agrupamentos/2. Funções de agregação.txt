@@ -1,0 +1,17 @@
+SUM(): A função SUM() é usada para calcular a soma dos valores em uma coluna específica.
+Por exemplo, SUM(salary) retorna a soma de todos os salários em um grupo.
+
+COUNT():A função COUNT() é utilizada para contar o número de registros em um grupo.
+Pode ser usada com COUNT(*) para contar todos os registros ou COUNT(coluna) para contar registros não nulos em uma coluna específica.
+Por exemplo, COUNT(*) retorna o número total de registros em um grupo.
+
+AVG(): A função AVG() calcula a média dos valores em uma coluna.
+Por exemplo, AVG(salary) retorna a média dos salários em um grupo.
+
+MIN(): A função MIN() retorna o menor valor em uma coluna.
+É útil para encontrar o menor valor em um grupo de dados.
+Por exemplo, MIN(salary) retorna o menor salário em um grupo.
+
+MAX(): A função MAX() retorna o maior valor em uma coluna.
+É usada para encontrar o maior valor em um grupo de dados.
+Por exemplo, MAX(salary) retorna o maior salário em um grupo.

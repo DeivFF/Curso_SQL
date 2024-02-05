@@ -1,0 +1,9 @@
+A cláusula GROUPING é uma extensão do SQL Server que é usada em conjunto com a cláusula GROUP BY para permitir a identificação de linhas agregadas em consultas que contenham colunas agrupadas e funções de agregação. Esta cláusula é especialmente útil quando você deseja saber se uma linha específica em um conjunto de resultados foi agregada ou não.
+
+Quando você usa a cláusula GROUP BY em uma consulta SQL para agrupar dados, o SQL Server pode agregar várias linhas de dados em uma única linha com base nos critérios de agrupamento especificados. A cláusula GROUPING fornece uma maneira de distinguir entre os valores agregados e os valores individuais nas colunas agrupadas.
+
+A sintaxe básica da cláusula GROUPING é a seguinte:
+
+GROUPING(column_name)
+
+Essa expressão retorna um valor inteiro que indica se a linha é uma linha agregada (resultado de uma operação de agrupamento) ou não. Se a expressão especificada em GROUPING for uma coluna na cláusula GROUP BY, ela retornará 1 para linhas agregadas e 0 para linhas não agregadas. Se a expressão não for uma coluna na cláusula GROUP BY, ela retornará NULL.

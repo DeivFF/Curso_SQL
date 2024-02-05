@@ -1,0 +1,34 @@
+A cláusula GROUP BY no SQL Server permite agrupar registros com base em valores comuns em uma ou mais colunas. Ela desempenha um papel crucial em consultas complexas que requerem a agregação de dados para análise ou relatórios.
+
+
+A estrutura básica de uma consulta SQL com a cláusula GROUP BY é a seguinte:
+
+SELECT coluna1, funcao_agregacao(coluna2)
+FROM tabela
+GROUP BY coluna1
+
+
+Nesta sintaxe:
+
+coluna1: é a coluna pela qual desejamos agrupar os resultados.
+funcao_agregacao(coluna2): Pode ser uma função de agregação como SUM, COUNT, AVG, MIN ou MAX, aplicada a uma
+determinada coluna.
+
+
+Algumas informações adicionais:
+
+A cláusula GROUP BY permite agrupar os resultados com base em uma ou mais colunas. Por exemplo, você pode
+agrupar dados por departamento e por mês.
+
+As funções de agregação permitem realizar cálculos em grupos de dados. Por exemplo, SUM(salario) retorna a
+soma dos salários em cada grupo.
+
+No SQL Server, a cláusula GROUP BY é avaliada após a seleção das linhas que atendem aos critérios definidos na
+cláusula WHERE.
+
+A cláusula HAVING é utilizada para filtrar grupos com base em valores agregados. Por exemplo, HAVING COUNT(*)
+> 10 seleciona apenas grupos com mais de 10 registros.
+
+A cláusula GROUP BY pode ser usada em conjunto com JOINs para agrupar e resumir dados de várias tabelas.
+
+O SQL Server trata valores NULL como um grupo distinto quando usados com GROUP BY.
