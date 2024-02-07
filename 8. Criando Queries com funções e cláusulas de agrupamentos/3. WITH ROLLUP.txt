@@ -1,0 +1,15 @@
+A cláusula WITH ROLLUP no SQL Server é utilizada em conjunto com a instrução GROUP BY para realizar agregações em um conjunto de resultados e gerar linhas adicionais que fornecem totais ou subtotalizações adicionais. Ela é útil para criar relatórios resumidos e hierárquicos.
+
+Quando você usa WITH ROLLUP em uma consulta GROUP BY, o SQL Server adiciona linhas de totalização adicionais no final do conjunto de resultados. Essas linhas contêm os totais ou subtotalizações de todas as linhas agrupadas na consulta.
+
+A sintaxe básica é a seguinte:
+
+SELECT column1, column2, ..., aggregate_function(column3)
+FROM table
+GROUP BY column1, column2, ..., ROLLUP (column3);
+Aqui está uma explicação dos elementos:
+
+column1, column2, ...: As colunas pelas quais você está agrupando os dados.
+aggregate_function(column3): Uma função de agregação aplicada a uma coluna específica.
+table: A tabela da qual você está selecionando os dados.
+ROLLUP (column3): A cláusula WITH ROLLUP é usada para incluir totais acumulados para a coluna especificada. Você também pode fornecer várias colunas separadas por vírgulas dentro dos parênteses para gerar totais acumulados para várias colunas.

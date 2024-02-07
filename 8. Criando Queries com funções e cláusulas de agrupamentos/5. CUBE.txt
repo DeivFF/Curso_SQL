@@ -7,13 +7,3 @@ A sintaxe básica da cláusula CUBE é a seguinte:
 SELECT coluna1, coluna2, ..., colunaN, FUNCAO_AGGREGACAO(valor)
 FROM tabela
 GROUP BY CUBE (coluna1, coluna2, ..., colunaN);
-
-Isso resultará em um conjunto de resultados que inclui totais para todas as combinações de valores nas colunas especificadas, além dos totais para cada coluna individualmente.
-
-Por exemplo, se você tiver uma tabela de vendas com colunas de data, produto e região, e você quiser calcular a soma das vendas para todas as combinações possíveis de data, produto e região, você poderia usar a cláusula CUBE da seguinte maneira:
-
-SELECT Data, Produto, Regiao, SUM(Valor) AS TotalVendas
-FROM TabelaVendas
-GROUP BY CUBE (Data, Produto, Regiao);
-
-Isso retornaria um conjunto de resultados com totais de vendas para cada data, produto, região e todas as combinações possíveis dessas três dimensões. É uma maneira eficaz de analisar dados em várias dimensões e obter insights mais profundos sobre seus dados.

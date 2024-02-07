@@ -1,0 +1,24 @@
+A cláusula HAVING é uma extensão da cláusula GROUP BY em SQL que permite filtrar os resultados de uma consulta com base em condições aplicadas aos grupos resultantes. Enquanto a cláusula WHERE é usada para filtrar linhas antes de agrupá-las, a cláusula HAVING é aplicada após a agregação de dados.
+
+Aqui está uma visão geral de como a cláusula HAVING é usada em uma consulta SQL:
+
+Agrupamento de dados: Primeiro, nós usamos a cláusula GROUP BY para agrupar as linhas da tabela com base em uma ou mais colunas.
+
+SELECT coluna1, coluna2, AVG(coluna3)
+FROM tabela
+GROUP BY coluna1, coluna2;
+
+Filtragem dos grupos: Depois de agrupar os dados, a cláusula HAVING permite filtrar os grupos com base em condições específicas. Essas condições são aplicadas aos resultados agregados, como médias, somas, contagens, etc.
+
+SELECT coluna1, coluna2, AVG(coluna3)
+FROM tabela
+GROUP BY coluna1, coluna2
+HAVING AVG(coluna3) > 50;
+
+Neste exemplo, apenas os grupos cuja média dos valores na coluna3 seja maior que 50 serão retornados.
+
+É importante notar a diferença entre as cláusulas WHERE e HAVING:
+
+WHERE é usado para filtrar linhas individuais de uma tabela antes do agrupamento.
+HAVING é usado para filtrar grupos de linhas depois que elas foram agrupadas usando GROUP BY.
+Além disso, enquanto WHERE é usado com funções de agregação como SUM, COUNT, AVG, MAX, MIN, etc., a HAVING é usada com os resultados dessas funções. Isso significa que podemos aplicar condições às funções de agregação na HAVING.
