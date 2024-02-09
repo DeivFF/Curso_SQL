@@ -1,0 +1,13 @@
+É possível calcular a média móvel com particionamento utilizando funções de janela (window functions) em conjunto com a cláusula OVER(). Isso permite segmentar os dados em grupos e calcular a média móvel dentro de
+cada grupo.
+Supondo que temos uma tabela de vendas chamada Vendas, onde o objetivo é calcular a média móvel do valor das
+vendas. Podemos utilizar a instrução a seguir para verificar essa informação.
+
+SELECT 
+    DataVenda,
+    ValorVenda,
+    AVG(ValorVenda) OVER (ORDER BY DataVenda) AS MediaMovel
+FROM 
+    Vendas;
+
+Neste exemplo, a média móvel do valor das vendas é calculada para cada ponto de dados na série temporal, considerando as vendas anteriores até a data atual. Isso permite visualizar como a média do valor das vendas evolui ao longo do tempo.

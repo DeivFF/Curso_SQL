@@ -1,0 +1,16 @@
+Para calcular a média móvel com particionamento no SQL Server, utiliza-se funções de janela (window
+functions) em conjunto com a cláusula OVER(). Isso permite calcular a média móvel dentro de grupos
+específicos de dados, segmentados por uma determinada coluna.
+Por exemplo, considerando a tabela anterior, é possível calcular a média móvel do valor das vendas para cada
+ano da seguinte forma:
+
+SELECT 
+    DataVenda,
+    ValorVenda,
+    AVG(ValorVenda) OVER (PARTITION BY YEAR(DataVenda) ORDER BY DataVenda) AS MediaMovel
+FROM 
+    Vendas;
+
+Neste exemplo, a média móvel do valor das vendas é calculada para cada ponto de dados na série temporal,
+considerando as vendas anteriores até a data atual, dentro de cada ano. Isso permite visualizar como a média
+do valor das vendas evolui ao longo do tempo, mas agora segmentada por ano.

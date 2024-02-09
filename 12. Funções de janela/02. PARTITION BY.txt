@@ -1,0 +1,28 @@
+A função PARTITION BY é uma cláusula frequentemente utilizada em SQL em conjunto com funções analíticas, como
+SUM, AVG, ROW_NUMBER, entre outras. Essa cláusula permite a divisão do conjunto de resultados em partições
+lógicas com base nos valores de uma ou mais colunas. Posteriormente, as funções analíticas são aplicadas a
+cada partição separadamente.
+
+Quando a cláusula PARTITION BY é utilizada, a função analítica é calculada em grupos de linhas que
+compartilham o mesmo valor ou conjunto de valores nas colunas especificadas na cláusula.
+
+A sintaxe geral é a seguinte:
+<função_analítica> OVER (PARTITION BY coluna1, coluna2, ...)
+
+Essa cláusula é composta pelos seguintes elementos:
+<função_analítica>: Refere-se à função analítica que está sendo aplicada, como SUM, AVG, ROW_NUMBER, etc.
+OVER: Esta cláusula define o escopo da função analítica.
+PARTITION BY: Indica as colunas pelas quais o conjunto de resultados será particionado.
+
+Por exemplo, utilizando a nossa base de dados exemplo, caso utilizemos o comando abaixo, teremos o seguinte
+resultado:
+
+SELECT nome_funcionario,
+       ano_fiscal,valor_venda,
+	   SUM(valor_venda) OVER (PARTITION BY ano_fiscal) as total_acumulado 
+FROM WindowFunction.Vendas
+
+SUM(valor_venda) OVER (PARTITION BY ano_fiscal) calcula a soma acumulada das vendas para cada ano fiscal. A
+cláusula (PARTITION BY ano_fiscal) divide o conjunto de resultados em partições separadas para cada ano
+fiscal, de modo que a soma acumulada seja calculada separadamente para cada ano, como temos 3 anos, 2020,
+2021, 2022, o resultado é dividido em três partições.

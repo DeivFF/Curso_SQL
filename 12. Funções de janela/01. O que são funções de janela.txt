@@ -1,0 +1,13 @@
+As funções de janela, também conhecidas como funções de janela analítica ou "window functions" em inglês, são
+uma poderosa ferramenta disponível em bancos de dados relacionais como o SQL Server. Elas permitem executar
+cálculos agregados ou analíticos em um conjunto de linhas relacionadas em uma consulta, sem agrupar os dados
+ou criar subconsultas.
+
+As funções de janela são usadas em combinação com a cláusula OVER para definir o conjunto de linhas ao qual a
+função será aplicada. A cláusula OVER especifica como as linhas devem ser particionadas e ordenadas antes de
+aplicar a função de janela.
+
+As funções de janela são muito úteis para calcular classificações, agregações e comparações dentro de um
+conjunto de dados sem a necessidade de criar subconsultas complexas ou fazer várias junções de tabelas. Isso
+torna as consultas mais eficientes e legíveis.
+

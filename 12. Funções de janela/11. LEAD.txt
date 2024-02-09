@@ -1,0 +1,26 @@
+A função LEAD é uma função de janela (window function) no SQL Server que permite acessar o valor de uma
+coluna de uma linha posterior dentro do mesmo conjunto de resultados. Essa função é o oposto da função LAG,
+pois retorna o valor de uma linha subsequente em vez da linha anterior.
+
+A sintaxe básica da função LEAD é a seguinte:
+LEAD(valor, offset, default) OVER (PARTITION BY coluna ORDER BY ordenação)
+
+Onde:
+valor: A coluna da qual você deseja recuperar o valor da linha subsequente.
+offset: O número de linhas após a linha atual da qual deseja recuperar o valor. Se não for especificado, o
+valor padrão é 1 (ou seja, a linha seguinte).
+default: O valor padrão a ser retornado se não houver uma linha subsequente para recuperar. Se não for
+especificado, o valor padrão é NULL.
+PARTITION BY coluna: Especifica a coluna pela qual o conjunto de resultados será particionado, ou seja, a
+função será aplicada a cada partição separadamente.
+ORDER BY ordenação: Especifica a ordem dos registros dentro de cada partição.
+
+Por exemplo, se quisermos recuperar o valor da venda na data seguinte, podemos usar a função LEAD da seguinte
+maneira:
+
+SELECT 
+    DataVenda,
+    ValorVenda,
+    LEAD(ValorVenda, 1, NULL) OVER (ORDER BY DataVenda) AS VendaDiaPosterior
+FROM 
+    Vendas;

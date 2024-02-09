@@ -1,0 +1,32 @@
+A função NTILE no SQL Server é uma função de janela (window function) que divide o conjunto de resultados em
+um número especificado de "baldes" ou "grupos" de tamanhos aproximadamente iguais. Essa função é útil para
+dividir dados em partes iguais, especialmente em situações como distribuição de recursos ou segmentação de
+clientes.
+Quando a função NTILE é utilizada, o conjunto de resultados é dividido em partições com base na ordem
+especificada, e os registros em cada partição são numerados sequencialmente de acordo com o número de baldes
+especificado. Se o número de registros não for divisível pelo número de baldes, alguns baldes podem ter um
+número ligeiramente diferente de registros.
+
+A sintaxe geral da função NTILE é a seguinte:
+
+NTILE(n) OVER (ORDER BY coluna)
+
+
+Onde:
+
+n é o número de registros em que o conjunto de resultados será dividido.
+ORDER BY coluna especifica a ordem dos registros para determinar como eles serão distribuídos entre os
+baldes.
+Por exemplo, se quisermos dividir os dados em 4 grupos com base na ordem crescente dos valores da coluna
+Pontos, podemos usar a função NTILE da seguinte 
+
+SELECT 
+    Time,
+    Pontos,
+    NTILE(4) OVER (ORDER BY Pontos) AS Grupo
+FROM 
+    TabelaPontos;
+
+Neste exemplo, a função NTILE divide os registros em 4 grupos, numerados de 1 a 4, com base na ordem
+crescente dos valores na coluna Pontos. Cada registro será atribuído a um grupo específico, de modo que a
+distribuição dos registros entre os grupos seja o mais uniforme possível.

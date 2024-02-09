@@ -31,7 +31,6 @@ SELECT nome_funcionario,
 	   SUM(valor_venda) OVER () as total_acumulado
 FROM Vendas
 
--- número de vendas por ano, por funcionário e o número total de vendas
 
 -- utilizando a cláusula OVER()
 SELECT nome_funcionario,
@@ -48,3 +47,73 @@ SELECT nome_funcionario,
 	   (SELECT count(*) FROM vendas) as total_vendas
 FROM Vendas
 GROUP BY nome_funcionario, ano_fiscal
+
+
+SELECT Start_station as estacao_inicio,
+	   Start_date as data_inicio,
+	   Duration,
+	   ROW_NUMBER() OVER (ORDER BY start_date)
+FROM dbo.capitalbikeshare_tripdata
+WHERE Start_date < '2012-01-09'
+
+SELECT * FROM dbo.capitalbikeshare_tripdata
+
+SELECT 
+    DataVenda,
+    ValorVenda,
+	Year(Datavenda) as Ano,
+    AVG(ValorVenda) OVER (PARTITION BY YEAR(DataVenda) ORDER BY DataVenda) AS MediaMovel
+FROM 
+    Vendas;
+
+SELECT 
+    DataVenda,
+    ValorVenda,		
+    AVG(ValorVenda) OVER (ORDER BY DataVenda) AS MediaMovel
+FROM 
+    Vendas;
+
+-- EXPLICANDO SOBRE ROW NUMBER, DENSE_RANK E RANK
+CREATE TABLE TabelaPontos (
+    Time VARCHAR(50) NOT NULL,
+    Pontos INT NOT NULL
+);
+
+INSERT INTO TabelaPontos (Time, Pontos)
+VALUES 
+    ('Flamengo', 35),
+    ('Palmeiras', 35),
+    ('Santos', 32),
+    ('Internacional', 30),
+    ('Fluminense', 30),
+    ('Fortaleza', 29);
+
+SELECT * FROM TabelaPontos
+
+SELECT Time,ROW_NUMBER() OVER (ORDER BY Pontos ASC) as ranking FROM TabelaPontos
+
+SELECT Time,
+	   pontos,
+       ROW_NUMBER() OVER (ORDER BY Pontos DESC) as ranking
+FROM TabelaPontos
+
+SELECT Time,ROW_NUMBER() OVER (ORDER BY Pontos DESC) as ranking FROM TabelaPontos
+SELECT Time,ROW_NUMBER() OVER (ORDER BY Pontos ASC) as ranking FROM TabelaPontos
+ORDER BY ranking DESC
+
+
+
+
+SELECT 
+    time,
+    Pontos,
+    RANK() OVER (ORDER BY Pontos DESC) AS Ranking
+FROM 
+    TabelaPontos;
+
+SELECT 
+    Time,
+    Pontos,
+    RANK() OVER (ORDER BY Pontos DESC) AS Ranking
+FROM 
+    TabelaPontos;

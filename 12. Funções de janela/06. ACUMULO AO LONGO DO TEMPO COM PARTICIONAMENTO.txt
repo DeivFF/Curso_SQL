@@ -1,0 +1,24 @@
+Para fazer um acumulado ao longo do tempo com particionamento em SQL, pode-se utilizar a função de janela
+SUM() em conjunto com a cláusula OVER() e especificar a ordem pela qual as linhas devem ser somadas, assim
+como a coluna pela qual deseja-se particionar os dados.
+
+Ainda utilizando a base de dados anterior, agora o objetivo é calcular o acumulado dos valores de vendas ao
+longo do tempo, particionado por ano, adicionamos novos registros para o ano de 2024. Aqui está um exemplo de
+consulta SQL que realiza essa operação:
+
+SELECT 
+    DataVenda,
+    ValorVenda,
+    SUM(ValorVenda) OVER (PARTITION BY YEAR(DataVenda) ORDER BY DataVenda) AS Acumulado
+FROM 
+    Vendas
+
+Neste exemplo, a função SUM(ValorVenda) calcula a soma acumulada dos valores de venda. A cláusula ”OVER
+(PARTITION BY YEAR(DataVenda) ORDER BY DataVenda)” especifica que a soma acumulada será calculada para cada
+linha do conjunto de resultados, particionada por ano (YEAR(DataVenda)) e ordenada pela data de venda
+(DataVenda).
+
+Isso resultará em uma tabela que mostra a data da venda, o valor da venda e o acumulado dos valores de venda
+até aquela data, porém agora agrupado por ano. Cada linha terá o acumulado de todas as vendas que ocorreram
+até a data especificada naquela linha, mas separado por ano. Essa abordagem é útil para análises que exigem o
+acompanhamento do desempenho ao longo do tempo, considerando diferentes períodos de tempo separadamente.

@@ -1,0 +1,26 @@
+A função ROW_NUMBER() atribui um número sequencial para cada linha de um conjunto de resultados, de acordo
+com a ordem especificada. Esta função é frequentemente utilizada em consultas SQL para classificar e paginar
+resultados, semelhante a um ranking.
+A sintaxe básica da função ROW_NUMBER é a seguinte:
+
+ROW_NUMBER() OVER (ORDER BY coluna1, coluna2, ...)
+
+Aqui está uma explicação dos principais componentes:
+
+ROW_NUMBER() A função em si que atribui um número de linha a cada registro.
+OVER: A cláusula que define a janela analítica ou a parte do conjunto de resultados sobre a qual a função é aplicada.
+(ORDER BY coluna1, coluna2, ...): A parte que especifica a ordem pela qual as linhas devem ser numeradas. 
+Podemos ordenar por uma ou mais colunas.
+
+Aqui está um exemplo simples de como usar ROW_NUMBER:
+
+SELECT nome_funcionario,
+	 ano_fiscal,
+	 valor_venda,
+ ROW_NUMBER() OVER (ORDER BY valor_venda DESC) AS NumeroLinha
+FROM 
+    Vendas;
+
+Neste exemplo, a função ROW_NUMBER atribuirá um número sequencial às linhas da tabela Vendas com base na
+ordem decrescente dos valores na coluna valor_venda. Isso pode ser útil em situações em precisamos
+referenciar ou classificar as linhas de acordo com a ordem de uma coluna específica.

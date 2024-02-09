@@ -1,0 +1,25 @@
+Quando utilizada sem argumentos, a função OVER() em SQL é uma cláusula que define o escopo da função
+analítica para todo o conjunto de resultados, sem agrupamento ou partição. Isso significa que a função será
+aplicada a todas as linhas do conjunto de resultados de forma global, sem distinção.
+
+Aqui está uma explicação detalhada dos componentes:
+
+OVER(): Esta é a cláusula que define o escopo da função analítica. Ao usar OVER() sem argumentos, estamos
+especificando que a função deve ser aplicada a todas as linhas do conjunto de resultados, sem distinção ou
+agrupamento.
+
+A função analítica utilizada em conjunto com OVER() pode ser qualquer função analítica válida, como SUM, AVG,
+ROW_NUMBER, entre outras. Quando usada sem argumentos, ela calcula o resultado para todas as linhas do
+conjunto de resultados.
+
+Por exemplo, utilizando a nossa base de dados exemplo, caso utilizemos o comando abaixo, teremos o seguinte
+resultado:
+
+SELECT nome_funcionario,
+	   ano_fiscal,
+	   valor_venda,
+	   SUM(valor_venda) OVER () as total_acumulado
+FROM WindowFunction.Vendas 
+
+Podemos notar que o resultado se repetiu por toda a coluna, isso ocorreu, pois não foi especificado nenhuma
+partição dentro da cláusula over(), dessa forma, o valor foi o mesmo para todas as linhas.

@@ -1,0 +1,32 @@
+A função LAG é uma função de janela (window function) no SQL Server que permite acessar o valor de uma coluna de uma linha anterior dentro do mesmo conjunto de resultados. Essa função é útil para comparar valores entre
+linhas consecutivas ou para calcular diferenças entre valores em diferentes linhas.
+
+A sintaxe básica da função LAG é a seguinte:
+
+LAG(valor, offset, default) OVER (PARTITION BY coluna ORDER BY ordenação)
+
+
+Onde:
+
+valor: A coluna da qual você deseja recuperar o valor da linha anterior.
+offset: O número de linhas antes da linha atual da qual deseja recuperar o valor. Se não for especificado, o
+valor padrão é 1 (ou seja, a linha anterior).
+default: O valor padrão a ser retornado se não houver uma linha anterior para recuperar. Se não for
+especificado, o valor padrão é NULL.
+
+PARTITION BY coluna: Especifica a coluna pela qual o conjunto de resultados será particionado, ou seja, a
+função será aplicada a cada partição separadamente.
+ORDER BY ordenação: Especifica a ordem dos registros dentro de cada partição.
+
+Por exemplo, se quisermos recuperar o valor da venda do dia anterior, podemos usar a função LAG da seguinte
+maneira:
+
+SELECT 
+    DataVenda,
+    ValorVenda,
+    LAG(ValorVenda, 1, NULL) OVER (ORDER BY DataVenda) AS VendaDiaAnterior
+FROM 
+    Vendas;
+
+Neste exemplo, a função LAG recuperará o valor da venda do dia anterior, ordenando os registros pela coluna
+DataVenda. Se não houver uma rodada anterior para um determinado time, o valor padrão retornado será NULL.

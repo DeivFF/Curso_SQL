@@ -1,0 +1,20 @@
+Para realizar um acumulado ao longo do tempo em SQL, pode-se utilizar a função de janela SUM() em conjunto
+com a cláusula OVER() e especificar a ordem pela qual as linhas devem ser somadas. Essa abordagem é útil
+quando é necessário calcular uma soma acumulada de valores ao longo de uma sequência de datas, por exemplo.
+Agora, utilizaremos outra tabela, supondo que haja uma tabela de vendas denominada Vendas com as colunas
+DataVenda e ValorVenda, e o objetivo seja calcular o acumulado dos valores de vendas ao longo do tempo.
+Poderíamos fazer da seguinte maneira:
+
+SELECT 
+    DataVenda,
+    ValorVenda,
+    SUM(ValorVenda) OVER (ORDER BY DataVenda) AS Acumulado
+FROM Vendas
+
+Neste exemplo, a função SUM(ValorVenda) calcula a soma acumulada dos valores de venda. A cláusula OVER (ORDER
+BY DataVenda) especifica que a soma acumulada será calculada para cada linha do conjunto de resultados, com
+base na ordem das datas de venda (DataVenda).
+
+Isso resultará em uma tabela que mostra a data da venda, o valor da venda e o acumulado dos valores de venda
+até aquela data. Cada linha terá o acumulado de todas as vendas que ocorreram até a data especificada naquela
+linha. Essa abordagem é útil para análises de tendências e acompanhamento do desempenho ao longo do tempo.
